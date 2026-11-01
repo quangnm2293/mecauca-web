@@ -90,6 +90,73 @@ on the website; the app is hidden.
   /nhat-ky, /tai-khoan (+ both subpages), /kiem-duyet, sitemap — all
   200; live home HTML has 0 app references and the new CTAs.
 
+## Full-card click (2026-11-01, after owner's card-tap report)
+
+Owner: "Click card k mở ra bãi câu đc phải click vào text, rà soát
+lại nhiều chỗ như vậy rồi" — on spot cards only the title text was a
+link; tapping the rest of the card did nothing. Whole site audited
+for the same pattern.
+
+**Technique:** one shared stretched-link pattern in `globals.css` —
+the card/row gets `.has-stretch` (position: relative) and its single
+primary link gets `.stretched-link` (an `::after` layer, inset 0,
+covers the whole card). Whole card gets `cursor: pointer` + a deeper
+hover shadow; the link's `:focus-visible` outline is drawn on the
+`::after` so keyboard focus rings the whole card. Independent
+in-card actions stay above the layer: for the ⚑ Báo cáo button only
+the `<button class="flag-btn">` itself is raised
+(`.has-stretch .flag-btn { position: relative; z-index: 2 }`) — NOT
+its wrapper, because the flag dialog is the button's sibling and
+must keep its global z-index over the sticky header. No `<a>` in
+`<a>` anywhere; cards with no destination were left non-clickable.
+
+**Inventory:**
+- FIXED (title/text-only link → whole surface):
+  - `SpotCard` — home featured, /bai-cau grid, spot-detail
+    "Bãi câu khác ở {tỉnh}" related spots.
+  - Article cards (home highlights, /cam-nang search list,
+    article-page "Đọc tiếp") — deduplicated into a new shared
+    `components/ArticleCard.tsx`.
+  - `ReportCard` (home latest, /bao-ca feed) — whole card → the
+    report's spot page via the existing spot-name link, stretched;
+    ⚑ Báo cáo stays independent (verified). Per-spot report lists
+    (`showSpot=false`) have no destination → unchanged.
+  - "Đóng góp của tôi" spot rows — the name is now the stretched
+    link when the spot is approved (was a small "Xem trang bãi →"
+    text link, now removed in favour of the row link).
+  - "Báo cá của tôi" + "Đóng góp của tôi" suggestion rows — had NO
+    link at all; the title now stretches to the row's spot page when
+    the spot resolves in the static directory (serverId → slug map
+    in `MyContent.tsx`); unresolvable rows stay unlinked.
+  - /tai-khoan "Nội dung của tôi" link-list rows — link stretched
+    over the whole row (rows also gained padding + hover background
+    so they read as tappable rows).
+- AUDITED, ALREADY FINE (no change): home kind-shortcut pills (the
+  Link IS the pill), SpotPicker rows and calendar day cells
+  (whole-row/cell `<button>`s), map popup links, header/footer/prose
+  links.
+- AUDITED, CORRECTLY NON-CLICKABLE (no change): journal entries
+  (no destination exists — spot is free text; the 🗑 button is the
+  only action), moderation queue cards (action cards; no target
+  link exists — Duyệt/Từ chối/Áp dụng buttons are the interaction).
+
+**Verification:** headless Chrome (puppeteer-core) against the exact
+exported build, 10/10 behavioural assertions — clicks on card
+PADDING/edges and on non-link children (species chip, excerpt
+paragraph, report-card edge, my-row status chip, link-list
+description span) navigate to the right URL; a click on ⚑ Báo cáo
+inside a report card does NOT navigate to the spot (it kicks off
+Google sign-in — the intercepted OAuth attempt proves the button
+received the click). Report data in the test was the backend's real
+payload replayed through request interception, because Chrome on
+this VM cannot traverse the credentialled egress proxy; a live
+in-browser click test is therefore not possible from here. The
+deployed tree is byte-identical to the tested build, and live
+checks confirm the new CSS (`a89ff3dab623cabe.css`) is served, the
+live home HTML contains the stretched-link markup, and all audited
+routes return 200.
+**Deploy:** source `7c3f538` (main), gh-pages `d3b3929`.
+
 ## Responsive pass (2026-11-01, after owner's "Chưa responsive" report)
 
 Method: headless-Chromium renders of the built export at 320/360/390/
