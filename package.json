@@ -1,0 +1,23 @@
+{
+  "name": "mecauca-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mê Câu Cá — website cộng đồng câu cá nước ngọt Việt Nam",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "dev": "next dev",
+    "build": "node scripts/fetch-data.mjs && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}
