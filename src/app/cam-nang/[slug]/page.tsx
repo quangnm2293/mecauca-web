@@ -41,7 +41,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </p>
         </div>
         <p style={{ color: 'var(--ink-soft)', fontSize: 14, marginTop: 14 }}>
-          Bài viết từ cộng đồng Review Không Mõm — cũng đọc được offline trong ứng dụng Mê Câu Cá.
+          Bài viết từ cộng đồng Review Không Mõm.
         </p>
       </article>
 

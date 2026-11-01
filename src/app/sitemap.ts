@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: siteUrl('/bao-ca/'), lastModified: now, changeFrequency: 'daily', priority: 0.7 },
     { url: siteUrl('/cam-nang/'), lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: siteUrl('/gioi-thieu/'), lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: siteUrl('/dang-bao-ca/'), lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
+    { url: siteUrl('/dong-gop/'), lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
   ];
   const spotPages: MetadataRoute.Sitemap = spots.map((s) => ({
     url: siteUrl(`/bai-cau/${s.slug}/`),

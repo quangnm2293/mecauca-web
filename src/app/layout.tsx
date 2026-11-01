@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
-import { APP_URL, siteUrl } from '@/lib/types';
+import { siteUrl } from '@/lib/types';
+import AuthProvider from '@/components/AuthProvider';
+import HeaderAuth from '@/components/HeaderAuth';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl('/')),
@@ -25,62 +27,68 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi">
       <body>
-        <header className="site-header">
-          <div className="wrap">
-            <Link href="/" className="logo">
-              <span className="logo-mark" aria-hidden>🎣</span>
-              Mê Câu Cá
-            </Link>
-            <nav className="main-nav" aria-label="Điều hướng chính">
-              <Link href="/bai-cau">Bãi câu</Link>
-              <Link href="/bao-ca">Báo cá</Link>
-              <Link href="/cam-nang" className="hide-sm">Cẩm nang</Link>
-              <Link href="/gioi-thieu" className="hide-sm">Giới thiệu</Link>
-              <a href={APP_URL} className="nav-cta" target="_blank" rel="noreferrer">
-                Mở ứng dụng
-              </a>
-            </nav>
-          </div>
-        </header>
-        <main>{children}</main>
-        <footer className="site-footer">
-          <div className="wrap">
-            <div className="footer-grid">
-              <div>
-                <h3>Mê Câu Cá</h3>
-                <p>
-                  Cộng đồng câu cá nước ngọt Việt Nam — dữ liệu bãi câu do cộng đồng đóng góp và
-                  kiểm duyệt, nói thẳng, không mõm.
-                </p>
-              </div>
-              <div>
-                <h3>Khám phá</h3>
-                <p>
-                  <Link href="/bai-cau">Tất cả bãi câu</Link>
-                  <br />
-                  <Link href="/bao-ca">Báo cá cộng đồng</Link>
-                  <br />
-                  <Link href="/cam-nang">Cẩm nang đi câu</Link>
-                </p>
-              </div>
-              <div>
-                <h3>Ứng dụng</h3>
-                <p>
-                  Đóng góp bãi mới, đăng báo cá và nhận nhắc ngày đẹp trong ứng dụng Mê Câu Cá.
-                  <br />
-                  <a href={APP_URL} target="_blank" rel="noreferrer">
-                    Mở ứng dụng Mê Câu Cá →
-                  </a>
-                </p>
-              </div>
+        <AuthProvider>
+          <header className="site-header">
+            <div className="wrap">
+              <Link href="/" className="logo">
+                <span className="logo-mark" aria-hidden>🎣</span>
+                Mê Câu Cá
+              </Link>
+              <nav className="main-nav" aria-label="Điều hướng chính">
+                <Link href="/bai-cau">Bãi câu</Link>
+                <Link href="/bao-ca">Báo cá</Link>
+                <Link href="/cam-nang" className="hide-sm">Cẩm nang</Link>
+                <Link href="/nhat-ky" className="hide-sm">Nhật ký</Link>
+                <Link href="/gioi-thieu" className="hide-sm">Giới thiệu</Link>
+                <Link href="/dang-bao-ca" className="nav-cta">
+                  Đăng báo cá
+                </Link>
+                <HeaderAuth />
+              </nav>
             </div>
-            <p className="footer-note">
-              Giá vé và thông tin bãi câu do cộng đồng cung cấp, có thể thay đổi — hãy kiểm tra lại
-              trước khi đi. Điểm câu cá chỉ là ước tính tham khảo cho vui, cá ăn hay không còn tùy
-              duyên người câu.
-            </p>
-          </div>
-        </footer>
+          </header>
+          <main>{children}</main>
+          <footer className="site-footer">
+            <div className="wrap">
+              <div className="footer-grid">
+                <div>
+                  <h3>Mê Câu Cá</h3>
+                  <p>
+                    Cộng đồng câu cá nước ngọt Việt Nam — dữ liệu bãi câu do cộng đồng đóng góp và
+                    kiểm duyệt, nói thẳng, không mõm.
+                  </p>
+                </div>
+                <div>
+                  <h3>Khám phá</h3>
+                  <p>
+                    <Link href="/bai-cau">Tất cả bãi câu</Link>
+                    <br />
+                    <Link href="/bao-ca">Báo cá cộng đồng</Link>
+                    <br />
+                    <Link href="/cam-nang">Cẩm nang đi câu</Link>
+                  </p>
+                </div>
+                <div>
+                  <h3>Cùng xây cộng đồng</h3>
+                  <p>
+                    <Link href="/dang-bao-ca">Đăng báo cá</Link>
+                    <br />
+                    <Link href="/dong-gop">Đóng góp bãi câu mới</Link>
+                    <br />
+                    <Link href="/nhat-ky">Nhật ký câu của bạn</Link>
+                    <br />
+                    <Link href="/tai-khoan">Tài khoản</Link>
+                  </p>
+                </div>
+              </div>
+              <p className="footer-note">
+                Giá vé và thông tin bãi câu do cộng đồng cung cấp, có thể thay đổi — hãy kiểm tra
+                lại trước khi đi. Điểm câu cá chỉ là ước tính tham khảo cho vui, cá ăn hay không
+                còn tùy duyên người câu. Ứng dụng di động Mê Câu Cá đang được phát triển.
+              </p>
+            </div>
+          </footer>
+        </AuthProvider>
       </body>
     </html>
   );

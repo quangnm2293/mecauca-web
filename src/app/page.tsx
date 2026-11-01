@@ -3,7 +3,7 @@ import HeroSearch from '@/components/HeroSearch';
 import SpotCard from '@/components/SpotCard';
 import { LatestReports } from '@/components/ReportList';
 import { articles, excerpt, featuredSpots, kinds, provinces, spots } from '@/lib/data';
-import { APP_URL, KIND_COLORS } from '@/lib/types';
+import { KIND_COLORS } from '@/lib/types';
 
 export default function HomePage() {
   const provinceCount = provinces.length;
@@ -96,15 +96,20 @@ export default function HomePage() {
 
         <section className="cta-band">
           <div>
-            <h2>Dùng đầy đủ tính năng trong ứng dụng</h2>
+            <h2>Cùng xây cộng đồng câu cá</h2>
             <p>
-              Đóng góp bãi mới, đăng báo cá, xem lịch câu cả tháng theo từng bãi và nhắc ngày đẹp —
-              trong ứng dụng Mê Câu Cá.
+              Đăng báo cá sau mỗi chuyến đi, đóng góp bãi câu mới và xem lịch câu cả tháng theo
+              từng bãi — ngay trên website này, chỉ cần đăng nhập bằng Google.
             </p>
           </div>
-          <a className="btn" href={APP_URL} target="_blank" rel="noreferrer">
-            Mở ứng dụng Mê Câu Cá
-          </a>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <Link className="btn" href="/dang-bao-ca">
+              Đăng báo cá
+            </Link>
+            <Link className="btn btn-ghost" href="/dong-gop">
+              Đóng góp bãi câu
+            </Link>
+          </div>
         </section>
       </div>
     </>

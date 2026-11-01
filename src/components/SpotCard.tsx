@@ -2,8 +2,15 @@ import Link from 'next/link';
 import type { Spot } from '@/lib/types';
 import { KIND_COLORS } from '@/lib/types';
 import { excerpt } from '@/lib/data';
+import { formatDistanceKm as formatKm } from '@/lib/constants';
 
-export default function SpotCard({ spot }: { spot: Spot }) {
+export default function SpotCard({
+  spot,
+  distanceKm,
+}: {
+  spot: Spot;
+  distanceKm?: number | null;
+}) {
   const color = KIND_COLORS[spot.kind] ?? '#0B6E4F';
   return (
     <article className="card" style={{ borderTopColor: color }}>
@@ -14,6 +21,9 @@ export default function SpotCard({ spot }: { spot: Spot }) {
         <span>
           {spot.province} · Miền {spot.region}
         </span>
+        {distanceKm != null && (
+          <span className="dist-line">📍 Cách bạn ~{formatKm(distanceKm)}</span>
+        )}
       </div>
       <h3>
         <Link href={`/bai-cau/${spot.slug}`}>{spot.name}</Link>

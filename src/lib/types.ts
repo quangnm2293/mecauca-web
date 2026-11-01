@@ -42,8 +42,6 @@ export const KIND_COLORS: Record<string, string> = {
   suoi: '#06B6D4',
 };
 
-export const APP_URL = 'https://quangnm2293.github.io/khongmom-cauca-test/';
-
 /** Origin + base path of this website (no trailing slash). */
 export const SITE_ORIGIN =
   process.env.NEXT_PUBLIC_SITE_ORIGIN ?? 'https://quangnm2293.github.io';

@@ -3,9 +3,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import SpotCard from '@/components/SpotCard';
 import SpotForecast from '@/components/SpotForecast';
+import SpotCalendar from '@/components/SpotCalendar';
+import SuggestionForm from '@/components/SuggestionForm';
+import FlagButton from '@/components/FlagButton';
 import { SpotReports } from '@/components/ReportList';
 import { excerpt, spotBySlug, spots, spotsInProvince } from '@/lib/data';
-import { APP_URL, KIND_COLORS } from '@/lib/types';
+import { KIND_COLORS } from '@/lib/types';
 
 export function generateStaticParams() {
   return spots.map((s) => ({ slug: s.slug }));
@@ -78,8 +81,18 @@ export default async function SpotPage({ params }: { params: Promise<{ slug: str
             <SpotForecast lat={spot.lat} lng={spot.lng} species={spot.species} />
           </section>
 
+          <section className="panel" aria-label="Lịch câu tháng này">
+            <h2>Lịch câu tháng này tại {spot.name}</h2>
+            <SpotCalendar lat={spot.lat} lng={spot.lng} species={spot.species} />
+          </section>
+
           <section className="panel" aria-label="Báo cá tại bãi này">
-            <h2>Báo cá tại bãi này</h2>
+            <div className="panel-head-row">
+              <h2>Báo cá tại bãi này</h2>
+              <Link className="btn" href={`/dang-bao-ca?bai=${spot.slug}`}>
+                Đăng báo cá
+              </Link>
+            </div>
             <SpotReports slug={spot.slug} />
           </section>
         </div>
@@ -98,7 +111,8 @@ export default async function SpotPage({ params }: { params: Promise<{ slug: str
                 </div>
               ) : (
                 <p style={{ margin: 0, color: 'var(--ink-soft)' }}>
-                  Cộng đồng chưa bổ sung — bạn biết bãi này có cá gì, hãy góp ý trong ứng dụng nhé.
+                  Cộng đồng chưa bổ sung — bạn biết bãi này có cá gì, hãy{' '}
+                  <a href="#goi-y">gửi gợi ý sửa</a> ở cuối trang nhé.
                 </p>
               )}
             </div>
@@ -156,17 +170,32 @@ export default async function SpotPage({ params }: { params: Promise<{ slug: str
         </section>
       )}
 
+      <section className="panel" id="goi-y" aria-label="Gợi ý sửa thông tin bãi" style={{ marginTop: 20 }}>
+        <h2>Gợi ý sửa / Báo sai</h2>
+        <SuggestionForm serverId={spot.serverId} spotName={spot.name} />
+        {spot.serverId && (
+          <p style={{ marginTop: 14 }}>
+            <FlagButton targetType="spot" targetId={spot.serverId} label="Báo cáo bãi này" />
+          </p>
+        )}
+      </section>
+
       <section className="cta-band">
         <div>
-          <h2>Biết thêm về bãi này?</h2>
+          <h2>Biết thêm bãi câu hay khác?</h2>
           <p>
-            Gợi ý sửa thông tin, thêm bãi mới và đăng báo cá được thực hiện trong ứng dụng — mọi
-            đóng góp đều qua kiểm duyệt trước khi công khai.
+            Thêm bãi mới, gợi ý sửa thông tin và đăng báo cá ngay trên website — mọi đóng góp đều
+            qua kiểm duyệt trước khi công khai.
           </p>
         </div>
-        <a className="btn" href={APP_URL} target="_blank" rel="noreferrer">
-          Mở ứng dụng Mê Câu Cá
-        </a>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          <Link className="btn" href="/dong-gop">
+            Đóng góp bãi câu
+          </Link>
+          <Link className="btn btn-ghost" href={`/dang-bao-ca?bai=${spot.slug}`}>
+            Đăng báo cá tại bãi này
+          </Link>
+        </div>
       </section>
     </div>
   );

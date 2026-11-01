@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { fetchLatestReports, fetchReportsForSpot } from '@/lib/backend';
 import { formatDateVi } from '@/lib/fold';
 import type { CatchReport } from '@/lib/types';
+import FlagButton from './FlagButton';
 
 function ReportCard({ r, showSpot }: { r: CatchReport; showSpot: boolean }) {
   return (
@@ -27,6 +28,9 @@ function ReportCard({ r, showSpot }: { r: CatchReport; showSpot: boolean }) {
         ) : (
           r.spotName && <p className="desc" style={{ margin: 0 }}>tại {r.spotName}</p>
         ))}
+      <p style={{ margin: 0 }}>
+        <FlagButton targetType="catchReport" targetId={r.id} />
+      </p>
     </article>
   );
 }
@@ -48,8 +52,8 @@ export function LatestReports({ limit = 6 }: { limit?: number }) {
   if (reports.length === 0) {
     return (
       <div className="empty-box">
-        Chưa có báo cá nào được duyệt. Hãy là người đầu tiên chia sẻ chiến lợi phẩm trong ứng dụng
-        Mê Câu Cá!
+        Chưa có báo cá nào được duyệt. Hãy là người đầu tiên{' '}
+        <Link href="/dang-bao-ca">chia sẻ chiến lợi phẩm</Link> cho cộng đồng!
       </div>
     );
   }
@@ -79,8 +83,7 @@ export function SpotReports({ slug }: { slug: string }) {
   if (reports.length === 0) {
     return (
       <div className="empty-box">
-        Chưa có báo cá nào tại bãi này. Câu được cá ở đây, nhớ đăng báo cá trong ứng dụng để anh em
-        cùng biết nhé!
+        Chưa có báo cá nào tại bãi này. Câu được cá ở đây, nhớ đăng báo cá để anh em cùng biết nhé!
       </div>
     );
   }
