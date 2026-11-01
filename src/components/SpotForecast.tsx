@@ -118,7 +118,7 @@ export default function SpotForecast({ lat, lng, species }: Props) {
             </div>
           </div>
         </div>
-        <div style={{ minWidth: 220, flex: 1 }}>
+        <div style={{ flex: '1 1 200px', minWidth: 0 }}>
           <p className="caps" style={{ color: '#A7F3D0' }}>
             Điểm câu cá hôm nay
           </p>

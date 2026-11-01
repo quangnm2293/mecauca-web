@@ -90,6 +90,67 @@ on the website; the app is hidden.
   /nhat-ky, /tai-khoan (+ both subpages), /kiem-duyet, sitemap — all
   200; live home HTML has 0 app references and the new CTAs.
 
+## Responsive pass (2026-11-01, after owner's "Chưa responsive" report)
+
+Method: headless-Chromium renders of the built export at 320/360/390/
+768/1280px across 11 routes (home, directory list + map, spot detail,
+handbook, reports, post-report, contribute, journal, account,
+moderation), with programmatic overflow measurement
+(`documentElement.scrollWidth` vs `innerWidth`, widest-element scans,
+and a live-override bisection to find the forcing element).
+
+Defects found (before):
+- **Header broken at every width ≤ ~900px.** The bar was a single
+  nowrap flex row locked to `height: 60px`; measured logo height
+  88px and CTA height 81px at 360px — links wrapped mid-word
+  ("Bãi/câu"), the logo stacked into 3 lines and was clipped, and
+  the "Đăng báo cá" pill ballooned into a blob spilling below the
+  bar. At 768px all 7 items re-appeared and wrapped the same way.
+  At 320px the header forced `scrollWidth` 343 (real overflow).
+- **Spot pages forced a 375px minimum layout width** (on a 360px
+  phone the layout viewport silently expanded → page rendered
+  zoomed-out). Bisected to `.cal-grid`: `repeat(7, 1fr)` tracks are
+  `minmax(auto, 1fr)`, so the badge min-content (`.cal-badge`
+  min-width 30px + cell padding) set a ~375px floor.
+- **Hero search overflowed at 320px**: the input's intrinsic
+  min-width pushed the "Tìm bãi" button to x=334 (button also
+  wrapped to two lines at 360px).
+- Latent risks fixed in the same pass: `.grid-2`/`.grid-3`/
+  `.filters`/`.footer-grid` minmax floors (300/250/180/220px) could
+  exceed sub-360px containers; the forecast text block's inline
+  `minWidth: 220`; `.comp-table`'s nowrap value cell
+  ("Chưa có dữ liệu"); 15px form inputs (iOS focus auto-zoom);
+  sub-40px tap targets (`.chip-btn`, `.icon-btn`, `.cal-nav` 36px).
+
+Fixes (all in `src/app/globals.css` + one inline style in
+`SpotForecast.tsx`):
+- Header: `min-height: 60px` instead of fixed height, logo
+  `nowrap`. At ≤900px the header wraps: `.main-nav` becomes
+  `display: contents` and items are ordered — logo, CTA
+  (margin-left auto) and account on row 1; text links flow onto
+  their own row below; every link `nowrap`. Desktop ≥901px is
+  pixel-identical to before (header height 61px incl. border,
+  verified at 1280px).
+- `.cal-grid` → `repeat(7, minmax(0, 1fr))`, `.cal-cell`
+  `min-width: 0`; at ≤480px cells/badges shrink (badge 11px,
+  min-width 24px) — solid-vs-outline keeps Dự báo vs Ước tính
+  distinguishable.
+- Hero search: input `min-width: 0`, button `nowrap; flex: none`.
+- Grid floors → `minmax(min(Npx, 100%), 1fr)`; forecast text block
+  → `flex: 1 1 200px; minWidth: 0`; comp-table value cells may
+  wrap ≤640px; form inputs 16px ≤640px; tap targets ≥40px
+  (`.cal-nav` now 40px globally); tighter panel/card padding
+  ≤480px; `overflow-x: clip` on body as a last-resort net only
+  (sticky header re-verified working after scroll).
+
+Verification (after): every audited route at 360/390/768 has
+`scrollWidth == innerWidth`, zero offending elements (the only
+rects outside the viewport are Leaflet tile <img>s inside their
+clipped pane — normal, pre-existing); home + spot also clean at
+320px; spot-page layout viewport no longer expands at 360px;
+screenshots confirm the two-row mobile header, one-line logo and
+pill CTA, full 7-column calendar, and unchanged desktop layout.
+
 ## V1 history (2026-11-01, earlier the same day)
 
 - Repo https://github.com/quangnm2293/mecauca-web (public): `main` =
