@@ -8,8 +8,12 @@ import type { CatchReport } from '@/lib/types';
 import FlagButton from './FlagButton';
 
 function ReportCard({ r, showSpot }: { r: CatchReport; showSpot: boolean }) {
+  // When the report names its spot, the WHOLE card navigates to the
+  // spot page (stretched link on the spot name). The ⚑ Báo cáo button
+  // is an independent action and sits above the stretched layer.
+  const linkToSpot = showSpot && !!r.spotSlug;
   return (
-    <article className="card report-card">
+    <article className={`card report-card${linkToSpot ? ' has-stretch' : ''}`}>
       <div className="meta-line">
         <span className="who">{r.authorName}</span>
         <span>· {formatDateVi(r.caughtOn)}</span>
@@ -23,7 +27,10 @@ function ReportCard({ r, showSpot }: { r: CatchReport; showSpot: boolean }) {
       {showSpot &&
         (r.spotSlug ? (
           <p className="desc" style={{ margin: 0 }}>
-            tại <Link href={`/bai-cau/${r.spotSlug}`}>{r.spotName}</Link>
+            tại{' '}
+            <Link className="stretched-link" href={`/bai-cau/${r.spotSlug}`}>
+              {r.spotName}
+            </Link>
           </p>
         ) : (
           r.spotName && <p className="desc" style={{ margin: 0 }}>tại {r.spotName}</p>

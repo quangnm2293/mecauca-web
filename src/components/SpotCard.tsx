@@ -13,7 +13,7 @@ export default function SpotCard({
 }) {
   const color = KIND_COLORS[spot.kind] ?? '#0B6E4F';
   return (
-    <article className="card" style={{ borderTopColor: color }}>
+    <article className="card has-stretch" style={{ borderTopColor: color }}>
       <div className="meta-line">
         <span className="chip chip-kind" style={{ background: color }}>
           {spot.kindLabel}
@@ -26,7 +26,7 @@ export default function SpotCard({
         )}
       </div>
       <h3>
-        <Link href={`/bai-cau/${spot.slug}`}>{spot.name}</Link>
+        <Link className="stretched-link" href={`/bai-cau/${spot.slug}`}>{spot.name}</Link>
       </h3>
       {spot.description && <p className="desc">{excerpt(spot.description, 130)}</p>}
       {spot.species.length > 0 && (

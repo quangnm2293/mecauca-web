@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import ArticleCard from '@/components/ArticleCard';
 import { articleBySlug, articles, excerpt } from '@/lib/data';
 
 export function generateStaticParams() {
@@ -52,12 +53,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
         <div className="grid grid-3">
           {others.map((a) => (
-            <article className="card" key={a.slug}>
-              <h3>
-                <Link href={`/cam-nang/${a.slug}`}>{a.title}</Link>
-              </h3>
-              <p className="desc">{excerpt(a.body, 120)}</p>
-            </article>
+            <ArticleCard key={a.slug} article={a} />
           ))}
         </div>
       </section>

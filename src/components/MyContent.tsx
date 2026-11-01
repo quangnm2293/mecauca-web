@@ -5,7 +5,15 @@ import Link from 'next/link';
 import { useAuth } from './AuthProvider';
 import { SignInPrompt, StatusChip } from './bits';
 import { KIND_LABELS } from '@/lib/constants';
+import { spots } from '@/lib/data';
 import { formatDateVi } from '@/lib/fold';
+
+/** Static spot directory keyed by backend row id — resolves which of
+ *  my rows have a public spot page to link to (rows whose spot isn't
+ *  in the current build simply stay unlinked). */
+const slugByServerId = new Map(
+  spots.filter((s) => s.serverId).map((s) => [s.serverId as string, s.slug]),
+);
 import {
   fetchMyReports,
   fetchMySpots,
@@ -53,13 +61,26 @@ export function MyReportsClient() {
   }
   return (
     <div className="grid" style={{ gap: 12 }}>
-      {rows.map((r) => (
-        <article key={r.serverId} className="card my-row">
+      {rows.map((r) => {
+        const slug = slugByServerId.get(r.spotServerId);
+        const title = (
+          <>
+            {r.species}
+            {r.weightKg != null && <> · {r.weightKg.toLocaleString('vi-VN')} kg</>}
+          </>
+        );
+        return (
+        <article key={r.serverId} className={`card my-row${slug ? ' has-stretch' : ''}`}>
           <div className="my-row-main">
             <p className="what" style={{ margin: 0 }}>
               <strong>
-                {r.species}
-                {r.weightKg != null && <> · {r.weightKg.toLocaleString('vi-VN')} kg</>}
+                {slug ? (
+                  <Link className="stretched-link" href={`/bai-cau/${slug}`}>
+                    {title}
+                  </Link>
+                ) : (
+                  title
+                )}
               </strong>
             </p>
             <p className="desc" style={{ margin: '2px 0 0' }}>
@@ -72,7 +93,8 @@ export function MyReportsClient() {
           </div>
           <StatusChip status={r.status} />
         </article>
-      ))}
+        );
+      })}
     </div>
   );
 }
@@ -119,31 +141,50 @@ export function MyContributionsClient() {
   }
   return (
     <div className="grid" style={{ gap: 12 }}>
-      {spots.map((s) => (
-        <article key={s.serverId} className="card my-row">
+      {spots.map((s) => {
+        const linkable = s.status === 'approved' && !!s.clientId;
+        return (
+        <article key={s.serverId} className={`card my-row${linkable ? ' has-stretch' : ''}`}>
           <div className="my-row-main">
             <p className="what" style={{ margin: 0 }}>
-              <strong>{s.name}</strong>
+              <strong>
+                {linkable ? (
+                  <Link className="stretched-link" href={`/bai-cau/${s.clientId}`}>
+                    {s.name}
+                  </Link>
+                ) : (
+                  s.name
+                )}
+              </strong>
             </p>
             <p className="desc" style={{ margin: '2px 0 0' }}>
               Bãi câu mới · {s.province} · {KIND_LABELS[s.kind] ?? s.kind}
-              {s.status === 'approved' && s.clientId && (
-                <>
-                  {' · '}
-                  <Link href={`/bai-cau/${s.clientId}`}>Xem trang bãi →</Link>
-                </>
-              )}
+              {linkable && <> · Bấm để xem trang bãi →</>}
             </p>
           </div>
           <StatusChip status={s.status} />
         </article>
-      ))}
-      {suggestions.map((g) => (
-        <article key={g.serverId} className="card my-row">
+        );
+      })}
+      {suggestions.map((g) => {
+        const slug = slugByServerId.get(g.spotServerId);
+        const title = (
+          <>
+            Sửa {g.field.toLowerCase()} — {names.get(g.spotServerId) ?? 'Bãi câu'}
+          </>
+        );
+        return (
+        <article key={g.serverId} className={`card my-row${slug ? ' has-stretch' : ''}`}>
           <div className="my-row-main">
             <p className="what" style={{ margin: 0 }}>
               <strong>
-                Sửa {g.field.toLowerCase()} — {names.get(g.spotServerId) ?? 'Bãi câu'}
+                {slug ? (
+                  <Link className="stretched-link" href={`/bai-cau/${slug}`}>
+                    {title}
+                  </Link>
+                ) : (
+                  title
+                )}
               </strong>
             </p>
             <p className="desc" style={{ margin: '2px 0 0' }}>
@@ -152,7 +193,8 @@ export function MyContributionsClient() {
           </div>
           <StatusChip status={g.status} />
         </article>
-      ))}
+        );
+      })}
     </div>
   );
 }

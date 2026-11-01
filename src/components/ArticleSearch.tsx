@@ -1,8 +1,8 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import Link from 'next/link';
-import { articles, excerpt } from '@/lib/data';
+import ArticleCard from './ArticleCard';
+import { articles } from '@/lib/data';
 import { matchesQuery } from '@/lib/fold';
 
 export default function ArticleSearch() {
@@ -32,12 +32,7 @@ export default function ArticleSearch() {
       ) : (
         <div className="grid grid-2">
           {filtered.map((a) => (
-            <article className="card" key={a.slug}>
-              <h3>
-                <Link href={`/cam-nang/${a.slug}`}>{a.title}</Link>
-              </h3>
-              <p className="desc">{excerpt(a.body, 150)}</p>
-            </article>
+            <ArticleCard key={a.slug} article={a} excerptLen={150} />
           ))}
         </div>
       )}

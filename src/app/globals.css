@@ -135,6 +135,29 @@ img { max-width: 100%; }
 .card h3 { font-size: 18px; margin: 0; }
 .card h3 a { color: var(--ink); }
 .card h3 a:hover { color: var(--primary); }
+
+/* ---- full-card click (stretched link) ----
+   A card/row that navigates carries ONE primary link; the link's
+   ::after stretches over the nearest .has-stretch ancestor so the
+   WHOLE surface is tappable, not just the title text. Independent
+   in-card actions (e.g. the ⚑ Báo cáo button) opt out via
+   .above-stretch so they stay clickable above the layer. */
+.has-stretch { position: relative; }
+.stretched-link::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius); }
+.link-list .stretched-link::after { border-radius: 12px; }
+.stretched-link:focus-visible { outline: none; }
+.stretched-link:focus-visible::after {
+  outline: 2.5px solid var(--primary); outline-offset: 2px;
+}
+.card.has-stretch { cursor: pointer; }
+.card.has-stretch:hover { box-shadow: 0 9px 22px rgba(11, 61, 44, 0.14); }
+.card.has-stretch h3 a:hover, .card.has-stretch .what a:hover { text-decoration: none; }
+.above-stretch { position: relative; z-index: 2; }
+/* The ⚑ Báo cáo button inside a stretched card must stay clickable
+   above the layer — only the BUTTON is raised, not its wrapper, so
+   the flag dialog (a sibling of the button) keeps its global
+   z-index and still overlays the sticky header. */
+.has-stretch .flag-btn { position: relative; z-index: 2; }
 .card .desc { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
 .meta-line { display: flex; flex-wrap: wrap; gap: 6px 12px; color: var(--ink-soft); font-size: 13.5px; align-items: center; }
 .chip {
@@ -248,12 +271,17 @@ img { max-width: 100%; }
   cursor: pointer; padding: 0;
 }
 .avatar-color.on { border-color: var(--ink); }
-.link-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.link-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.link-list li { padding: 10px 12px; border-radius: 12px; }
+.link-list li:hover { background: var(--soft); }
 .link-list a { font-weight: 700; font-size: 16px; }
+.link-list a:hover { text-decoration: none; }
 .link-list span { display: block; color: var(--ink-soft); font-size: 13.5px; }
 .my-row { flex-direction: row !important; align-items: flex-start; gap: 12px; }
 .my-row-main { flex: 1; min-width: 0; }
 .my-row .what { font-size: 15.5px; }
+.my-row .what a { color: var(--ink); }
+.my-row .what a:hover { color: var(--primary); }
 
 /* ---- forms ---- */
 .web-form { display: grid; gap: 14px; }

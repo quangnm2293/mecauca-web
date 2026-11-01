@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import HeroSearch from '@/components/HeroSearch';
 import SpotCard from '@/components/SpotCard';
+import ArticleCard from '@/components/ArticleCard';
 import { LatestReports } from '@/components/ReportList';
-import { articles, excerpt, featuredSpots, kinds, provinces, spots } from '@/lib/data';
+import { articles, featuredSpots, kinds, provinces, spots } from '@/lib/data';
 import { KIND_COLORS } from '@/lib/types';
 
 export default function HomePage() {
@@ -84,12 +85,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-3">
             {articles.slice(0, 6).map((a) => (
-              <article className="card" key={a.slug}>
-                <h3>
-                  <Link href={`/cam-nang/${a.slug}`}>{a.title}</Link>
-                </h3>
-                <p className="desc">{excerpt(a.body, 120)}</p>
-              </article>
+              <ArticleCard key={a.slug} article={a} />
             ))}
           </div>
         </section>

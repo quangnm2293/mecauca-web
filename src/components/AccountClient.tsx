@@ -143,21 +143,21 @@ export default function AccountClient() {
       <section className="panel">
         <h2 style={{ marginTop: 0 }}>Nội dung của tôi</h2>
         <ul className="link-list">
-          <li>
-            <Link href="/tai-khoan/bao-ca">🎣 Báo cá của tôi</Link>
+          <li className="has-stretch">
+            <Link className="stretched-link" href="/tai-khoan/bao-ca">🎣 Báo cá của tôi</Link>
             <span>Các báo cá bạn đã đăng, kèm trạng thái duyệt thật.</span>
           </li>
-          <li>
-            <Link href="/tai-khoan/dong-gop">📍 Đóng góp của tôi</Link>
+          <li className="has-stretch">
+            <Link className="stretched-link" href="/tai-khoan/dong-gop">📍 Đóng góp của tôi</Link>
             <span>Bãi câu mới và gợi ý sửa bạn đã gửi, kèm trạng thái.</span>
           </li>
-          <li>
-            <Link href="/nhat-ky">📒 Nhật ký câu</Link>
+          <li className="has-stretch">
+            <Link className="stretched-link" href="/nhat-ky">📒 Nhật ký câu</Link>
             <span>Sổ tay chuyến đi — chỉ lưu trên thiết bị này.</span>
           </li>
           {isModerator && (
-            <li>
-              <Link href="/kiem-duyet">
+            <li className="has-stretch">
+              <Link className="stretched-link" href="/kiem-duyet">
                 🛡️ Kiểm duyệt nội dung{' '}
                 {modPending > 0 && <span className="mod-badge">{modPending}</span>}
               </Link>
