@@ -150,6 +150,9 @@ clipped pane — normal, pre-existing); home + spot also clean at
 320px; spot-page layout viewport no longer expands at 360px;
 screenshots confirm the two-row mobile header, one-line logo and
 pill CTA, full 7-column calendar, and unchanged desktop layout.
+**Deploy:** source commit `0b58849` (main), gh-pages `cf0e5ca`;
+live home now references CSS `176cb8ca998924b9.css` (was
+`8ffd29eae3cc5643.css`); all audited routes curl-verified 200.
 
 ## V1 history (2026-11-01, earlier the same day)
 
