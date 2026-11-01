@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://quangnm2293.github.io/mecauca-web/sitemap.xml

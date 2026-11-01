@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fbai-cau\u002F[slug]","\u002Fcam-nang\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
