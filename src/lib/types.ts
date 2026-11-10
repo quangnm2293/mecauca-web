@@ -42,9 +42,19 @@ export const KIND_COLORS: Record<string, string> = {
   suoi: '#06B6D4',
 };
 
-/** Origin + base path of this website (no trailing slash). */
-export const SITE_ORIGIN =
-  process.env.NEXT_PUBLIC_SITE_ORIGIN ?? 'https://quangnm2293.github.io';
-export const SITE_BASE = process.env.NEXT_PUBLIC_SITE_BASE ?? '/mecauca-web';
+/**
+ * Origin + base path of this website (no trailing slash).
+ * Both are injected at build time by next.config.ts from the single
+ * deploy-time input set (SITE_BASE_PATH + SITE_ORIGIN), so they always
+ * match the router's basePath: '' on Vercel / a custom domain,
+ * '/mecauca-web' on GitHub Pages. The literals below are only a
+ * last-resort fallback for tooling that bypasses next.config.
+ */
+export const SITE_ORIGIN = (
+  process.env.NEXT_PUBLIC_SITE_ORIGIN ?? 'https://quangnm2293.github.io'
+).replace(/\/+$/, '');
+export const SITE_BASE = (
+  process.env.NEXT_PUBLIC_SITE_BASE ?? '/mecauca-web'
+).replace(/\/+$/, '');
 export const siteUrl = (path = '/') =>
   `${SITE_ORIGIN}${SITE_BASE}${path.startsWith('/') ? path : `/${path}`}`;

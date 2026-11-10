@@ -98,10 +98,23 @@ try {
   console.log(`fetch-data: ${spots.length} spots from live backend`);
 } catch (e) {
   console.warn(`fetch-data: live fetch failed (${e.message}); parsing app dataset`);
-  spots = parseDart();
-  console.log(`fetch-data: ${spots.length} spots from app dataset snapshot`);
+  try {
+    spots = parseDart();
+    console.log(`fetch-data: ${spots.length} spots from app dataset snapshot`);
+  } catch (e2) {
+    // No sibling app checkout (e.g. Vercel build): keep the committed
+    // snapshot rather than failing the whole build.
+    const committed = join(root, 'src/data/spots.json');
+    if (!existsSync(committed)) throw e2;
+    console.warn(
+      `fetch-data: app dataset unavailable (${e2.message}); keeping committed spots.json`,
+    );
+    spots = null;
+  }
 }
-writeFileSync(join(root, 'src/data/spots.json'), JSON.stringify(spots, null, 1));
+if (spots) {
+  writeFileSync(join(root, 'src/data/spots.json'), JSON.stringify(spots, null, 1));
+}
 
 const articlesSrc = join(APP, 'assets/cam_nang.json');
 if (existsSync(articlesSrc)) {

@@ -90,6 +90,92 @@ on the website; the app is hidden.
   /nhat-ky, /tai-khoan (+ both subpages), /kiem-duyet, sitemap — all
   200; live home HTML has 0 app references and the new CTAs.
 
+## Vercel readiness (2026-11-10)
+
+Owner decision: put the website on Vercel under a `*.vercel.app`
+domain (the exact subdomain name is being confirmed with him in
+parallel — everything below is name-agnostic). This pass only makes
+the repo import-ready; **nothing was deployed to Vercel** and the
+live GitHub Pages site is untouched.
+
+**What was coupled to GitHub Pages (audit findings):**
+- **Two independent base-path knobs for the same value:**
+  `SITE_BASE_PATH` (read by `next.config.ts` for the router) vs
+  `NEXT_PUBLIC_SITE_BASE` (read by client code, **defaulting to the
+  literal `/mecauca-web`**). A no-env Vercel build would have run the
+  router at the domain root while sitemap/robots/metadata base, the
+  Supabase OAuth `redirectTo` (`origin + SITE_BASE + /tai-khoan/`)
+  and the Leaflet popup links still carried `/mecauca-web` — broken
+  absolute URLs and a refused sign-in redirect.
+- **Origin literal:** `SITE_ORIGIN` defaulted to
+  `https://quangnm2293.github.io` in `src/lib/types.ts` — correct as
+  the Pages default, but it had to come from deploy-time env on
+  Vercel.
+- **`scripts/fetch-data.mjs` crash risk off-Pages:** if the live
+  backend fetch failed, the fallback parsed the sibling Flutter
+  checkout (`../fishing-app`), which does not exist in a Vercel
+  build, and the build died — even though committed snapshots exist.
+- Verified NOT coupled: all canonical/OG plumbing flows through
+  `siteUrl()` (`layout.tsx` metadataBase, `sitemap.ts`, `robots.ts`);
+  per-page OpenGraph blocks carry no URLs at all; no other
+  `github.io` strings exist in code or copy (the only other absolute
+  URLs are external services: OSM embed/tiles, directions links, the
+  backend itself).
+
+**Changes:**
+- `next.config.ts` is now the single source of truth: from
+  `SITE_BASE_PATH` + `SITE_ORIGIN` (fallback alias
+  `NEXT_PUBLIC_SITE_ORIGIN`; default = Pages origin) it derives the
+  client values and injects them via the Next `env` config, so
+  `NEXT_PUBLIC_SITE_BASE`/`NEXT_PUBLIC_SITE_ORIGIN` can never drift
+  from the router again. `NEXT_PUBLIC_SITE_BASE` remains available
+  as an explicit override.
+- `src/lib/types.ts`: trailing-slash normalisation + comments
+  pointing at the config as the source (literals kept only as a
+  last-resort fallback for tooling that bypasses next.config).
+- `scripts/fetch-data.mjs`: if both the live fetch and the app
+  dataset are unavailable, the build keeps the committed
+  `src/data/spots.json` instead of failing (articles already behaved
+  this way).
+- `vercel.json` (new): `framework: nextjs`,
+  `buildCommand: npm run build`, `outputDirectory: out` — matches
+  `output: 'export'`, so a Vercel import needs zero guesswork.
+
+**Env matrix:**
+
+| | GitHub Pages (today) | Vercel |
+|---|---|---|
+| `SITE_BASE_PATH` | `/mecauca-web` | unset (root) |
+| `SITE_ORIGIN` | unset (defaults to the Pages origin) | `https://<project>.vercel.app` (optional; sitemap/robots/metadata base only) |
+| Required env | `SITE_BASE_PATH` only | none |
+
+**Verification — three production builds (2026-11-10):**
+1. *Vercel flavour* (`SITE_BASE_PATH`/`NEXT_PUBLIC_*` unset,
+   `SITE_ORIGIN=https://mecauca-web.vercel.app` as a stand-in name):
+   148 HTML files, sitemap 141 URLs all on the env origin, robots
+   pointing at the env origin, **0** `/mecauca-web` path prefixes in
+   exported HTML and JS bundles, **0** `quangnm2293.github.io`
+   references in HTML/sitemap/robots, asset URLs root-relative
+   (`/_next/…`).
+2. *Status-quo Pages build* (documented env: `SITE_BASE_PATH` +
+   both `NEXT_PUBLIC_*`): output shape identical to the pre-change
+   baseline — 148 HTML, 141 sitemap URLs on the Pages origin,
+   `/mecauca-web/` asset prefixes present. Pages flavour untouched.
+3. *Pages, single knob* (`SITE_BASE_PATH=/mecauca-web` only): same
+   Pages output as (2), including the Pages-origin sitemap and the
+   inlined base in the client bundle (`location.origin + base +
+   "/tai-khoan/"`) — the unification works.
+
+**Post-import checklist (for when the owner imports):**
+1. Import `quangnm2293/mecauca-web`; Root Directory `./`; the
+   project name chosen at import becomes the `*.vercel.app`
+   subdomain (see README for the full click-path).
+2. Add `https://<name>.vercel.app/**` to Supabase → Authentication
+   → URL Configuration → Redirect URLs.
+3. Smoke-test Google sign-in on the Vercel origin.
+4. Decide the fate of the GitHub Pages staging afterwards (it keeps
+   working unchanged until then).
+
 ## Full-card click (2026-11-01, after owner's card-tap report)
 
 Owner: "Click card k mở ra bãi câu đc phải click vào text, rà soát
@@ -240,8 +326,10 @@ live home now references CSS `176cb8ca998924b9.css` (was
 
 - Custom domain (user chose free GitHub Pages staging first,
   2026-11-01). Move = DNS + rebuild with empty `SITE_BASE_PATH` +
-  `NEXT_PUBLIC_SITE_ORIGIN`, **plus** adding `https://<domain>/**`
-  to the Supabase redirect URLs — see README.
+  `SITE_ORIGIN`, **plus** adding `https://<domain>/**`
+  to the Supabase redirect URLs — see README. A Vercel
+  `*.vercel.app` deployment is being prepared instead (2026-11-10,
+  see "Vercel readiness" above).
 - Scheduled rebuilds (GitHub Actions cron) so newly approved spots
   get static pages without a manual build; runtime surfaces
   (feed, pickers, moderation) are already live.
