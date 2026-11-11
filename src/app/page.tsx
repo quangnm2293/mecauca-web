@@ -12,28 +12,32 @@ export default function HomePage() {
     <>
       <section className="hero">
         <div className="wrap">
-          <h1>Mê Câu Cá</h1>
-          <p className="tagline">
-            Cộng đồng câu cá nước ngọt Việt Nam — tìm bãi câu sông, hồ chứa, hồ tự nhiên và hồ dịch
-            vụ, xem loài cá, giá vé và dự báo điểm câu cá hôm nay tại từng bãi.
-          </p>
-          <HeroSearch />
-          <div className="stats-row">
-            <div className="stat">
-              <b>{spots.length}</b>
-              <span>bãi câu đã kiểm chứng</span>
-            </div>
-            <div className="stat">
-              <b>{provinceCount}</b>
-              <span>tỉnh / thành phố</span>
-            </div>
-            <div className="stat">
-              <b>{articles.length}</b>
-              <span>bài cẩm nang đi câu</span>
-            </div>
-            <div className="stat">
-              <b>4</b>
-              <span>yếu tố chấm điểm mỗi ngày</span>
+          <div className="hero-panel">
+            <h1>
+              Mê <span className="hl">Câu Cá</span>
+            </h1>
+            <p className="tagline">
+              Cộng đồng câu cá nước ngọt Việt Nam — tìm bãi câu sông, hồ chứa, hồ tự nhiên và hồ
+              dịch vụ, xem loài cá, giá vé và dự báo điểm câu cá hôm nay tại từng bãi.
+            </p>
+            <HeroSearch />
+            <div className="stats-row">
+              <div className="stat">
+                <b>{spots.length}</b>
+                <span>bãi câu đã kiểm chứng</span>
+              </div>
+              <div className="stat">
+                <b>{provinceCount}</b>
+                <span>tỉnh / thành phố</span>
+              </div>
+              <div className="stat">
+                <b>{articles.length}</b>
+                <span>bài cẩm nang đi câu</span>
+              </div>
+              <div className="stat">
+                <b>4</b>
+                <span>yếu tố chấm điểm mỗi ngày</span>
+              </div>
             </div>
           </div>
         </div>
@@ -42,7 +46,9 @@ export default function HomePage() {
       <div className="wrap">
         <section className="section">
           <div className="section-head">
-            <h2>Bạn muốn câu ở đâu?</h2>
+            <h2>
+              Bạn muốn câu ở đâu? <span className="sec-badge alt">4 loại bãi</span>
+            </h2>
             <Link href="/bai-cau">Xem tất cả bãi câu →</Link>
           </div>
           <div className="kind-shortcuts">
@@ -60,7 +66,9 @@ export default function HomePage() {
 
         <section className="section">
           <div className="section-head">
-            <h2>Bãi câu nổi bật</h2>
+            <h2>
+              Bãi câu nổi bật <span className="sec-badge">Top</span>
+            </h2>
             <Link href="/bai-cau">Tất cả {spots.length} bãi →</Link>
           </div>
           <div className="grid grid-2">
@@ -72,7 +80,9 @@ export default function HomePage() {
 
         <section className="section">
           <div className="section-head">
-            <h2>Báo cá mới nhất từ cộng đồng</h2>
+            <h2>
+              Báo cá mới nhất từ cộng đồng <span className="sec-badge">Mới</span>
+            </h2>
             <Link href="/bao-ca">Xem tất cả báo cá →</Link>
           </div>
           <LatestReports limit={6} />
@@ -80,7 +90,9 @@ export default function HomePage() {
 
         <section className="section">
           <div className="section-head">
-            <h2>Cẩm nang đi câu</h2>
+            <h2>
+              Cẩm nang đi câu <span className="sec-badge alt">Hay</span>
+            </h2>
             <Link href="/cam-nang">Đọc tất cả {articles.length} bài →</Link>
           </div>
           <div className="grid grid-3">

@@ -1,5 +1,74 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## ReviewHub-style redesign (2026-11-11)
+
+Owner, on the Vercel screenshot: "header hơi lệch, làm lại giao diện
+cho đẹp như reviewhub nhưng giữ tông màu này" — the header read as
+misaligned/unpolished; he wants ReviewHub's design quality in this
+site's own emerald + amber palette.
+
+**Diagnosis of "lệch":** the header and body shared the `.wrap`
+container on paper, but nothing enforced it visually — the logo mark
+was a soft-shadow gradient tile, the wordmark plain system font, nav
+links borderless text at a different height (39px) than the logo
+(34px) with no shared centre line, and no current-page state.
+Measured on the old build (headless): logo top 13 / height 34,
+nav top 10.4 / height 39.25 — visibly off-axis.
+
+**Design tokens (globals.css):** warm green-tinted paper
+`--paper: #FAF8EE` (ReviewHub cream, green-shifted); green-black ink
+`--ink: #14342A`; `--bd: 2px solid ink` on cards, panels, buttons,
+inputs, header; hard offset shadows — cards `5px 5px 0 #B9D2BD`
+(solid soft-green ink), buttons/pills `3px 3px 0 ink`; press-down
+hover/active everywhere (translate into the shadow, shadow shrinks
+to 0); radius 16px. Fonts self-hosted in `src/app/fonts/` (24 woff2,
+~250KB, subsetted vietnamese/latin-ext/latin, emitted by webpack to
+`_next/static/media/` so URLs are basePath-correct on both hosts):
+**Space Grotesk** 500/600/700 for headings, numbers, logo, score;
+**Be Vietnam Pro** 400–800 for body. `html { scrollbar-gutter:
+stable }` so the centred column never shifts between short/long
+pages.
+
+**Header (the explicit fix):** sticky paper bar with a 2px ink
+bottom border; logo lockup = 40px emerald-gradient tile with ink
+border + `3px 3px 0 ink` shadow + Space Grotesk wordmark with "Cá"
+in emerald over an amber swipe; nav links are pills (transparent
+2px border at rest so nothing shifts; hover = card bg + ink border
++ hard shadow; press on active); **current page** = amber-soft pill
++ ink border + shadow via a new client `MainNav` (usePathname,
+basePath-agnostic, `aria-current="page"`); the CTA stays an emerald
+pill, the account/"Đăng nhập" entry is now a bordered chip with an
+ink-ringed avatar. Everything in the bar is 40px tall on one centre
+line (verified: logo centre == nav centre == 33px in a 68px bar).
+Mobile two-row wrap from the responsive pass is preserved exactly
+(logo + CTA row 1, account + links row 2).
+
+**Everywhere else, same language:** hero is now an emerald PANEL
+(ink border, `7px 7px 0 ink` shadow) inside the container, headline
+with an amber marker swipe under "Câu Cá", the search is one chunky
+bordered pill control with the amber button inside it, stats are
+bordered translucent mini-cards (flex-sized, 2×2 on phones);
+section headings get tilted edge badges (Top / Mới / Hay / 4 loại
+bãi) and their "view all" links became mini press pills; cards keep
+their kind-coloured top band (6px) over the ink border (articles =
+orange band, reports = amber band); kind shortcuts, filter panel,
+form inputs (ink border + hard shadow on focus), chip buttons,
+picker, modals, Leaflet boxes, calendar (bordered cells, ink-ringed
+score badges, press nav buttons), journal stat cards, status/type
+chips, footer (ink top border, display-font headings) — all moved
+to the same tokens. Bonus fix found on the way: `.comp-bar` was an
+inline span whose track collapsed (invisible stubs) — now
+`display: block`, so forecast bars always render as proper tracks.
+
+**Behaviour preserved + verified** (headless Chrome on the local
+export, before/after): overflow = 0 at 1280/768/390 on every audited
+route (8 routes at 768, 4 at 1280+390); header inner left/right ==
+main container left/right to the pixel at 1280 (72.5/1192.5) and
+390 (0/375, logo exactly on the 16px content edge); fonts confirmed
+loaded via `document.fonts.check` (17 faces); full-card click on a
+SpotCard's padding corner still navigates (stretched link intact);
+Leaflet, auth, forms untouched (CSS/markup-shell changes only).
+
 ## Current state (V2, 2026-11-01) — full app feature parity, app hidden
 
 User order (2026-11-01): "cho phép dùng tất cả chức năng của app ở web,

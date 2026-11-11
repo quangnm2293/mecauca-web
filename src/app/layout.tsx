@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './globals.css';
 import { siteUrl } from '@/lib/types';
 import AuthProvider from '@/components/AuthProvider';
-import HeaderAuth from '@/components/HeaderAuth';
+import MainNav from '@/components/MainNav';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl('/')),
@@ -30,21 +30,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AuthProvider>
           <header className="site-header">
             <div className="wrap">
-              <Link href="/" className="logo">
+              <Link href="/" className="logo" aria-label="Mê Câu Cá — trang chủ">
                 <span className="logo-mark" aria-hidden>🎣</span>
-                Mê Câu Cá
+                <span className="logo-text">
+                  Mê Câu <span className="accent">Cá</span>
+                </span>
               </Link>
-              <nav className="main-nav" aria-label="Điều hướng chính">
-                <Link href="/bai-cau">Bãi câu</Link>
-                <Link href="/bao-ca">Báo cá</Link>
-                <Link href="/cam-nang" className="hide-sm">Cẩm nang</Link>
-                <Link href="/nhat-ky" className="hide-sm">Nhật ký</Link>
-                <Link href="/gioi-thieu" className="hide-sm">Giới thiệu</Link>
-                <Link href="/dang-bao-ca" className="nav-cta">
-                  Đăng báo cá
-                </Link>
-                <HeaderAuth />
-              </nav>
+              <MainNav />
             </div>
           </header>
           <main>{children}</main>

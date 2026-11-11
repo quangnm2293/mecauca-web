@@ -12,7 +12,7 @@ export default function ArticleCard({
   excerptLen?: number;
 }) {
   return (
-    <article className="card has-stretch">
+    <article className="card card-article has-stretch">
       <h3>
         <Link className="stretched-link" href={`/cam-nang/${article.slug}`}>
           {article.title}
