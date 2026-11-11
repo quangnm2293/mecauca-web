@@ -1,0 +1,828 @@
+[
+  {
+    "slug": "ho-dai-1995",
+    "name": "Hồ Đài 1995",
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "lat": 21.011095,
+    "lng": 105.938595,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Trắm đen",
+      "Chép"
+    ],
+    "ticketNote": "300.000đ/ca 5 tiếng, 500.000đ/2 ca 10 tiếng, 700.000đ/3 ca 15 tiếng, 1.000.000đ/24 giờ (theo website của nhà hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu đài dịch vụ của hệ thống Vũ Môn Fishing tại Trâu Quỳ, Gia Lâm, diện tích 12.000m², 77 vị trí ngồi, hoạt động 24/24.",
+    "address": "Ngõ 64 Ngô Xuân Quảng, Trâu Quỳ, Gia Lâm, Hà Nội",
+    "sourceUrls": [
+      "https://vumonfishing.com/ho-dai-1995-ha-noi-d40621"
+    ],
+    "recencyNote": "Website chính thức của nhà hồ còn live, crawl 11/11/2026; giá và nội quy đăng trực tiếp trên trang của hồ."
+  },
+  {
+    "slug": "ho-cau-dai-quang-huy",
+    "name": "Hồ câu đài Quang Huy",
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "lat": 20.969926,
+    "lng": 105.81247,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Trắm đen",
+      "Trắm cỏ"
+    ],
+    "ticketNote": "Giá tham khảo: 300.000đ/5 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu đài dịch vụ ở Thanh Liệt, Hà Nội; là một trong số ít hồ được trang tổng hợp gắn nhãn 'Đã xác minh'.",
+    "address": "16 Đường Quang Liệt, Thanh Liệt, Hà Nội",
+    "sourceUrls": [
+      "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+    ],
+    "recencyNote": "Liệt kê trong danh sách hồ đang hoạt động của canthuviet.vn, crawl 11/11/2026."
+  },
+  {
+    "slug": "ho-cau-hai-anh",
+    "name": "Hồ Câu Hải Anh",
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "lat": 21.014434,
+    "lng": 105.948571,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Trắm",
+      "Rô phi"
+    ],
+    "ticketNote": "Giá tham khảo: 260.000đ/5 giờ – 410.000đ/10 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu dịch vụ ở Đặng Xá, Gia Lâm, Hà Nội.",
+    "address": "Ngõ 408 đường Ỷ Lan, Đặng Xá, Gia Lâm, Hà Nội",
+    "sourceUrls": [
+      "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+    ],
+    "recencyNote": "Nằm trong danh sách hồ đang hoạt động 2026 của canthuviet.vn, crawl 11/11/2026."
+  },
+  {
+    "slug": "ho-cau-tuan-huong",
+    "name": "Hồ Câu Tuấn Hương",
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "lat": 20.963286,
+    "lng": 105.839305,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Trắm",
+      "Rô phi",
+      "Trắm đen"
+    ],
+    "ticketNote": "Giá tham khảo: 200.000đ/5 giờ – 300.000đ/10 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu dịch vụ chuyên câu đơn/câu đài ở Hoàng Liệt, Hà Nội, có trắm đen, bồi cá vào thứ Ba theo mô tả của trang tổng hợp.",
+    "address": "89 Phố Linh Đường, Tựu Liệt, Hoàng Liệt, Hà Nội",
+    "sourceUrls": [
+      "https://www.canthuviet.vn/ho-cau/tinh/ha-noi",
+      "https://www.canthuviet.vn/ho-cau/tinh/ha-noi/cau-tram-den"
+    ],
+    "recencyNote": "Nằm trong danh sách hồ đang hoạt động 2026 của canthuviet.vn, crawl 11/11/2026."
+  },
+  {
+    "slug": "ho-cau-ban-tu-nhien-tuan-anh",
+    "name": "Hồ câu bán tự nhiên Tuấn Anh",
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "lat": 20.805466,
+    "lng": 105.844865,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép"
+    ],
+    "ticketNote": "350.000đ/ca sau khai trương; vé ngày khai trương 500.000đ/10 giờ (theo fanpage của hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu bán tự nhiên mới khai trương cuối tháng 10/2026 ở xã Thượng Phúc, Hà Nội (gần cầu Đồng Quan); nhà hồ công bố thả khoảng 3 tấn cá, trong đó 1,6 tấn chép, và có mua lại cá.",
+    "address": "Cụm 9, Thôn Liễu Viên, Xã Thượng Phúc, Hà Nội",
+    "sourceUrls": [
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid03P8xvKHkwqdrwcuSw7U77zLT7JN5uZ5eRU58REq33WehA1SkVV6hzz9CVegsh35dl&id=61595498939093"
+    ],
+    "recencyNote": "Fanpage của hồ đăng bài 28/10/2026 về giải câu khai trương 31/10/2026, trả lời trực tiếp khách về giá vé và lượng cá thả. Toạ độ ở mức thôn Liễu Viên."
+  },
+  {
+    "slug": "ho-cau-minh-ngoc",
+    "name": "Hồ Câu Minh Ngọc",
+    "province": "Hải Phòng",
+    "region": "Bắc",
+    "lat": 20.830978,
+    "lng": 106.556053,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Trắm đen"
+    ],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ câu dịch vụ ở thôn Khúc Giản, xã An Tiến, An Lão, Hải Phòng, mở cửa 24/7, có quy định riêng cho câu trắm đen và mua lại cá.",
+    "address": "Thôn Khúc Giản, Xã An Tiến, An Lão, Hải Phòng",
+    "sourceUrls": [
+      "https://www.facebook.com/reel/1153193217270752/",
+      "https://www.youtube.com/watch?v=xvxGDx8ZA88"
+    ],
+    "recencyNote": "Fanpage của hồ (14K followers) đăng video báo cá liên tục, mới nhất 10/11/2026; bài 07/10/2026 đăng nội quy + giờ mở cửa. TOẠ ĐỘ MỨC XÃ An Tiến — sai số có thể ~1–2km, trùng điểm khu vực với Hồ Câu Núi Voi đã có trong dataset (khác hồ, khác tên)."
+  },
+  {
+    "slug": "ho-cau-2000",
+    "name": "Hồ Câu 2000",
+    "province": "Quảng Ninh",
+    "region": "Bắc",
+    "lat": 21.107318,
+    "lng": 106.583697,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Điêu hồng"
+    ],
+    "ticketNote": null,
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Hồ câu dịch vụ lớn ở khu Nông Trường, phường Bình Khê, Đông Triều, Quảng Ninh, có đảo/đê giữa hồ với nhiều vị trí ngồi.",
+    "address": "Nông Trường, Phường Bình Khê, Đông Triều, Quảng Ninh",
+    "sourceUrls": [
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid02GzqkbsqLK2zN7rWFuvbexHJkzU9LfavZCeZewJW73kBo6P4TQtLhMZPGwTAcnn4Pl&id=61585340841645",
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid0nty512uZfX197s1WJtH31FsrupsTVKeFexUWv7TjccXpn28K7DRVogHpK6l&id=61585340841645"
+    ],
+    "recencyNote": "Fanpage đăng bài 07/11/2026 (bồi cá diêu hồng, mời câu 2 ca kèm ăn trưa) và 28/09/2026 (mở lại hồ). TOẠ ĐỘ MỨC PHƯỜNG Bình Khê — chưa ghim được đúng mặt hồ; tiện ích 'Ăn uống' suy từ lời mời ăn trưa trong bài đăng, nên rà lại."
+  },
+  {
+    "slug": "ho-cau-anh-duc",
+    "name": "Hồ Câu Anh Đức",
+    "province": "Ninh Bình",
+    "region": "Bắc",
+    "lat": 20.591783,
+    "lng": 106.125345,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Trắm đen",
+      "Trắm cỏ"
+    ],
+    "ticketNote": "200.000đ/5 giờ, 300.000đ/12 giờ (theo fanpage của hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu bán tự nhiên ở thôn Chân Lý, xã Bắc Lý, Ninh Bình, ngay chân cầu Thái Hà bên đê sông Hồng; mở cửa 5h30–23h, thường bồi chép và trắm đen 3–5kg.",
+    "address": "Thôn Chân Lý, Xã Bắc Lý, Ninh Bình (gần cầu Thái Hà, đê sông Hồng)",
+    "sourceUrls": [
+      "https://www.facebook.com/ten.thuyen.nhe/posts/pfbid02pyEJvt9oYXr8RPVZDWU3Zsa7k91o6Bnw4JmCFewvPo1a7Z9mCj1WnzoNuu9eN2Vkl"
+    ],
+    "recencyNote": "Fanpage đăng bài mới nhất 10/11/2026 thông báo bồi chép cho ngày 11/11/2026 kèm giá vé và giờ mở cửa. Toạ độ tại cầu Thái Hà — điểm hồ tự quảng cáo ('chân cầu Thái Hà')."
+  },
+  {
+    "slug": "ho-cau-ca-tam-giang",
+    "name": "Hồ Câu Cá Tam Giang",
+    "province": "Bắc Ninh",
+    "region": "Bắc",
+    "lat": 21.172625,
+    "lng": 106.089358,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Hồ câu cá dịch vụ mới ở đường Tam Giang, khu Chũ Mẫu, Vân Dương, Bắc Ninh (cụm ao gần cầu Đại Phúc theo ảnh vệ tinh nhà hồ đăng); bảng hiệu của hồ ghi có câu giải trí/chuyên nghiệp và ăn uống đặc sản.",
+    "address": "Đường Tam Giang, Chũ Mẫu, Vân Dương, Bắc Ninh",
+    "sourceUrls": [
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid024rSE5S9tVHkzEYsxmMxK6VNQvhgdN9H9NXq6H9iDvyHJwc84Rq9ghxjo2sygiciJl&id=61591930100401",
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid031JMMmtxCWJkzK3hMgG6byrGoWp4UDpbqPx3QNqw63kJN13k6ZTY5JSr74hNEZC1kl&id=61591930100401"
+    ],
+    "recencyNote": "⚠️ Fanpage đăng 31/10/2026 thông báo LÙI ngày khai trương — hồ có thật và đang hoàn thiện, cần kiểm tra đã mở cửa chưa trước khi nhập. Loài cá chưa được nhà hồ xác nhận công khai nên để trống."
+  },
+  {
+    "slug": "ho-thien-nga-ecopark",
+    "name": "Hồ Thiên Nga — Ecopark",
+    "province": "Hưng Yên",
+    "region": "Bắc",
+    "lat": 20.956189,
+    "lng": 105.93296,
+    "kind": "hoTuNhien",
+    "kindLabel": "Hồ tự nhiên",
+    "species": [],
+    "ticketNote": "Giá tham khảo: 200.000đ/4 tiếng câu cá (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ nước lớn (~50ha) trong Công viên Hồ Thiên Nga, khu đô thị Ecopark, Văn Giang, Hưng Yên; vào cổng công viên miễn phí, câu cá là dịch vụ thu phí riêng tại công viên.",
+    "address": "Công viên Hồ Thiên Nga, Khu đô thị Ecopark, Văn Giang, Hưng Yên",
+    "sourceUrls": [
+      "https://buulong.com.vn/ho-thien-nga-ecopark-hung-yen.html",
+      "https://ecoparker.com/khu-vui-choi-ecopark/cong-vien-ho-thien-nga"
+    ],
+    "recencyNote": "Không phải hồ dịch vụ độc lập mà là hồ công viên có thu phí câu; hai trang hướng dẫn công viên (cập nhật 2026) đều liệt kê câu cá 200.000đ/4 tiếng trong bảng giá dịch vụ hiện hành."
+  },
+  {
+    "slug": "ho-pa-khoang",
+    "name": "Hồ Pá Khoang",
+    "province": "Điện Biên",
+    "region": "Bắc",
+    "lat": 21.442504,
+    "lng": 103.090891,
+    "kind": "hoChua",
+    "kindLabel": "Hồ chứa / đập",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ chứa lớn gần 600ha thuộc xã Mường Phăng và xã Pá Khoang, cách trung tâm Điện Biên Phủ khoảng 20km; các nguồn du lịch ghi nhận hoạt động câu cá cùng chèo thuyền/kayak trên hồ.",
+    "address": "Xã Mường Phăng / Xã Pá Khoang, Điện Biên",
+    "sourceUrls": [
+      "https://datviettour.com.vn/tin-tuc/ho-pa-khoang-tieu-ha-long-tren-nui-tai-dien-bien",
+      "https://fishinginvietnam.com/fishing-in-dien-bien/"
+    ],
+    "recencyNote": "Hồ tự nhiên/hồ chứa (không phải hồ dịch vụ); toạ độ là POI hồ chứa trên OpenStreetMap."
+  },
+  {
+    "slug": "ho-thang-hen",
+    "name": "Hồ Thang Hen",
+    "province": "Cao Bằng",
+    "region": "Bắc",
+    "lat": 22.758154,
+    "lng": 106.294829,
+    "kind": "hoTuNhien",
+    "kindLabel": "Hồ tự nhiên",
+    "species": [
+      "Anh vũ",
+      "Rầm xanh",
+      "Cháy"
+    ],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ nước ngọt tự nhiên trên núi ở xã Quốc Toản, Trà Lĩnh, Cao Bằng — hồ lớn nhất trong quần thể 36 hồ Thang Hen; du khách và cần thủ địa phương câu cá tại hồ.",
+    "address": "Xã Quốc Toản, Trà Lĩnh, Cao Bằng",
+    "sourceUrls": [
+      "https://vietnamtourism.vn/index.php/news/items/17391",
+      "https://tuoitre.vn/du-lich/thang-hen-quyen-ru-1027969.htm"
+    ],
+    "recencyNote": "Hồ tự nhiên (không phải hồ dịch vụ); toạ độ là POI hồ trên OpenStreetMap. ⚠️ Danh sách loài cá lấy từ bài Tuổi Trẻ (2015) — nên rà lại khi biên tập."
+  },
+  {
+    "slug": "ho-kenh-ha",
+    "name": "Hồ Kênh Hạ — Galina Lake View",
+    "province": "Khánh Hòa",
+    "region": "Trung",
+    "lat": 12.18841,
+    "lng": 109.15717,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chim",
+      "Mè",
+      "Tra",
+      "Lăng",
+      "Rô phi",
+      "Chép"
+    ],
+    "ticketNote": "Giá tham khảo: thuê cần tre + mồi 50.000đ, cần máy + mồi 80.000đ; cá câu mang về 139.000đ/kg (cá chim, cá mè), 250.000đ/kg (cá tra, cá lăng) (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [
+      "Thuê cần"
+    ],
+    "description": "Khu du lịch sinh thái tại Phước Đồng, cách trung tâm Nha Trang khoảng 10km, có dịch vụ câu cá giải trí; cá câu được tính theo kg nếu mang về, có phí chế biến tại chỗ.",
+    "address": "Đường Hoàng Minh Thảo, xã Phước Đồng, TP. Nha Trang, Khánh Hòa",
+    "sourceUrls": [
+      "https://www.nhatrangtoday.vn/khu-du-lich-ho-kenh-ha-post1320",
+      "https://nhatrang79.com/ho-kenh-ha-nha-trang-atc.36"
+    ],
+    "recencyNote": "Trang giới thiệu được cập nhật 15/03/2025; không đọc được fanpage chính thức của hồ."
+  },
+  {
+    "slug": "cau-ca-giai-tri-lam-vien",
+    "name": "Câu Cá Giải Trí Lâm Viên",
+    "province": "Khánh Hòa",
+    "region": "Trung",
+    "lat": 12.24625,
+    "lng": 109.13195,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Điêu hồng"
+    ],
+    "ticketNote": null,
+    "facilities": [
+      "Chòi / lều câu",
+      "Thuê cần"
+    ],
+    "description": "Hồ câu khoảng 7.000m² tại Vĩnh Trung, Nha Trang, có chòi tranh; cá câu được khoảng 3–10kg/con và có thể chế biến tại chỗ, món đặc trưng là cá điêu hồng chiên xù.",
+    "address": "Thôn Xuân Sơn, xã Vĩnh Trung, TP. Nha Trang, Khánh Hòa",
+    "sourceUrls": [
+      "https://tripi.vn/blog/vi/xep-hang/6-diem-cau-ca-giai-tri-dang-trai-nghiem-nhat-khanh-hoa-tripi"
+    ],
+    "recencyNote": "Nằm trong danh sách Tripi xuất bản 09/07/2025; geocoder có POI mang tên 'Lâm Viên' tại đúng thôn Xuân Sơn, Vĩnh Trung."
+  },
+  {
+    "slug": "ho-cau-dong-cuong",
+    "name": "Hồ Câu Đông Cương",
+    "province": "Thanh Hóa",
+    "region": "Bắc",
+    "lat": 19.84355,
+    "lng": 105.76901,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ câu dịch vụ trên đường Đình Hương, phường Đông Cương, TP Thanh Hóa; giờ mở cửa theo danh sách tổng hợp là 08:00–22:00.",
+    "address": "Đ. Đình Hương, P. Đông Cương, TP. Thanh Hóa, Thanh Hóa",
+    "sourceUrls": [
+      "https://tripi.vn/blog/vi/doi-song/kham-pha-5-dia-chi-cau-ca-giai-tri-noi-tieng-nhat-tai-tinh-thanh-hoa-tripi"
+    ],
+    "recencyNote": "Danh sách Tripi xuất bản 29/05/2025; geocoder trả POI đúng tên hồ trên đường Đình Hương."
+  },
+  {
+    "slug": "duyen-que-phu-thuong-hue",
+    "name": "Duyên Quê Restaurant",
+    "province": "Huế",
+    "region": "Trung",
+    "lat": 16.48821,
+    "lng": 107.60646,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Chòi / lều câu",
+      "Ăn uống"
+    ],
+    "description": "Nhà hàng kết hợp câu cá tại Phú Thượng, Huế; khuôn viên khoảng 2.000m² với hơn 20 chòi câu nằm sát hồ.",
+    "address": "Xóm 7, TDP Ngọc Anh, P. Phú Thượng, TP. Huế",
+    "sourceUrls": [
+      "https://huetoplist.vn/top-5-noi-cau-ca-giai-tri-hue-thu-gian-cuoi-tuan-khong-gian-thoang/"
+    ],
+    "recencyNote": "HueTopList (crawl 2026) vẫn liệt kê kèm số điện thoại; geocoder có POI 'Duyên Quê Quán' tại Phú Thượng khớp địa chỉ nguồn."
+  },
+  {
+    "slug": "ho-cau-ca-quan-sau-quy-nhon",
+    "name": "Hồ Câu Cá Quán Sáu",
+    "province": "Gia Lai",
+    "region": "Trung",
+    "lat": 13.79563,
+    "lng": 109.17435,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Tra",
+      "Rô"
+    ],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ câu trên đường Hùng Vương, Quy Nhơn; theo trang tổng hợp, hồ thả bổ sung 100–300kg cá/ngày tùy lượng khách, cá có con 6–7kg và thường tổ chức thi câu.",
+    "address": "825 Hùng Vương, Quy Nhơn, Gia Lai",
+    "sourceUrls": [
+      "https://top10quynhon.com/dich-vu-cau-ca-o-quy-nhon/",
+      "https://quynhonreview.vn/topAZ/dich-vu-cau-ca-o-quy-nhon"
+    ],
+    "recencyNote": "Hai trang tổng hợp Quy Nhơn (crawl tháng 11/2026) vẫn liệt kê kèm hotline; không tìm thấy bài đăng 2025–2026 của chính hồ."
+  },
+  {
+    "slug": "nha-hang-duyen-que-quy-nhon",
+    "name": "Nhà hàng Duyên Quê — Quy Nhơn",
+    "province": "Gia Lai",
+    "region": "Trung",
+    "lat": 13.74879,
+    "lng": 109.21032,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Nhà hàng tại trung tâm Quy Nhơn kết hợp hồ câu cá thư giãn, được hai trang tổng hợp địa phương liệt kê là điểm câu dịch vụ.",
+    "address": "12 Mai Hắc Đế, Quy Nhơn, Gia Lai",
+    "sourceUrls": [
+      "https://top10quynhon.com/dich-vu-cau-ca-o-quy-nhon/",
+      "https://quynhonreview.vn/topAZ/dich-vu-cau-ca-o-quy-nhon"
+    ],
+    "recencyNote": "Vẫn xuất hiện trong danh sách crawl 11/2026 kèm hotline; toạ độ khớp theo số nhà + tên đường (12 Mai Hắc Đế)."
+  },
+  {
+    "slug": "ho-thuy-quai-da-lat",
+    "name": "Hồ Thủy Quái",
+    "province": "Lâm Đồng",
+    "region": "Trung",
+    "lat": 11.95483,
+    "lng": 108.39781,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Khu du lịch câu cá giải trí tại Vạn Thành, Đà Lạt, do Tập đoàn Liên Minh đầu tư; hồ nuôi cá lớn 8–35kg, khách chỉ được mang về cá dưới 5kg.",
+    "address": "Vạn Thành, Phường 5, TP. Đà Lạt, Lâm Đồng",
+    "sourceUrls": [
+      "http://www.vietactivity.com/bai-viet/1-ngay-miet-vuon-tai-ho-thuy-quai-da-lat-64.html",
+      "https://happydaytravel.com/da-ngoai-cuoi-tuan-o-ho-thuy-quai.html"
+    ],
+    "recencyNote": "⚠️ YẾU: nguồn mới nhất cập nhật 2023, không tìm thấy bằng chứng hoạt động 2025–2026 — nên gọi kiểm chứng trước khi duyệt."
+  },
+  {
+    "slug": "ho-cau-mai-hoa-trang",
+    "name": "Hồ Câu Mai Hoa Trang",
+    "province": "Đắk Lắk",
+    "region": "Trung",
+    "lat": 12.6871,
+    "lng": 108.06945,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Hồ câu kết hợp ăn uống tại Tân Lập, Buôn Ma Thuột; hồ rộng, nhiều cây xanh, phù hợp gia đình và nhóm bạn, có 229 lượt đánh giá trên dữ liệu tổng hợp.",
+    "address": "97 Y Ni Ksor, Tân Lập, Buôn Ma Thuột, Đắk Lắk",
+    "sourceUrls": [
+      "https://daklakreview.vn/topAZ/ho-cau-ca-buon-ma-thuot"
+    ],
+    "recencyNote": "Danh sách Đắk Lắk Review đề ngày 07/10/2026 với 229 đánh giá — địa điểm được đánh giá nhiều nhất trong nhóm hồ câu Buôn Ma Thuột."
+  },
+  {
+    "slug": "ho-cau-ong-bay-ha",
+    "name": "Hồ Câu Ông Bảy Hạ",
+    "province": "Đắk Lắk",
+    "region": "Trung",
+    "lat": 12.68648,
+    "lng": 108.02877,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Chòi / lều câu",
+      "Ăn uống"
+    ],
+    "description": "Hồ câu lâu năm tại Thành Nhất, Buôn Ma Thuột, kết hợp quán sân vườn và chòi riêng cho nhóm; 123 lượt đánh giá trên dữ liệu tổng hợp.",
+    "address": "51 Phan Đình Phùng, Thành Nhất, Buôn Ma Thuột, Đắk Lắk",
+    "sourceUrls": [
+      "https://daklakreview.vn/topAZ/ho-cau-ca-buon-ma-thuot"
+    ],
+    "recencyNote": "Danh sách 07/10/2026 vẫn liệt kê; chính nguồn tổng hợp cũng khuyên gọi xác nhận hồ còn phục vụ câu trước khi đến (một số phản hồi cũ trái chiều)."
+  },
+  {
+    "slug": "ho-cau-ca-huynh-gia",
+    "name": "Hồ Câu Cá Huỳnh Gia",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 10.9509764,
+    "lng": 106.6456384,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Tra",
+      "Cá hô",
+      "Mè"
+    ],
+    "ticketNote": "200.000đ/4 giờ, thêm giờ 50.000đ; câu ngày 400.000đ/9 giờ (theo fanpage của hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ chuyên chép ở Bình Mỹ, Củ Chi, mở cửa 7h–21h theo thông báo của hồ; có thưởng cá lớn (hô, tra, mè).",
+    "address": "Đường 165 Hà Duy Phiên, Bình Mỹ, Củ Chi, TP.HCM",
+    "sourceUrls": [
+      "https://www.facebook.com/hocaucahuynhgia/posts/pfbid0efxAGYLKFf91S2jWgkfk9MynMY2dmHgAEQZ2ntPKBceN4ris4ZUMFEKHd2hEexT5l"
+    ],
+    "recencyNote": "Bài đăng trên fanpage của hồ ngày 24/10/2026 (thông báo hồ chuyên chép kèm bảng giá) — đang hoạt động. Toạ độ trên chính đường Hà Duy Phiên, xã Bình Mỹ (Nominatim)."
+  },
+  {
+    "slug": "ho-cau-ca-giai-tri-cay-xanh",
+    "name": "Hồ Câu Cá Giải Trí Cây Xanh",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 10.9267406,
+    "lng": 106.6060541,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Tra"
+    ],
+    "ticketNote": "240.000đ/3 giờ (suất bắt buộc), các giờ sau 70.000đ/giờ (theo fanpage của hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu giải trí chuyên cá tra ở Bình Mỹ, Củ Chi, mở cửa 9h–21h; giới hạn 40 cần theo thông báo khai trương.",
+    "address": "380A Võ Văn Bích, Bình Mỹ, Củ Chi, TP.HCM",
+    "sourceUrls": [
+      "https://www.facebook.com/ho.cau.vuon.dua.2025/posts/pfbid02DYyeVpbYvWctNGEy7Uo82osmkw9jcmQBBDFCAyJJyTV866ue6eDyw6poX7uk643Vl"
+    ],
+    "recencyNote": "Fanpage đăng thông báo khai trương 10/07/2026 kèm giá và nội quy (bài đăng 05/07/2026) — hồ mới mở năm 2026. Toạ độ trên đường Võ Văn Bích, xã Bình Mỹ."
+  },
+  {
+    "slug": "ho-cau-ca-thd-cu-chi",
+    "name": "Hồ Câu Cá THD Củ Chi",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 11.0845736,
+    "lng": 106.4930052,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Nàng hai",
+      "Trê",
+      "Rô đồng",
+      "Chim",
+      "Tra"
+    ],
+    "ticketNote": null,
+    "facilities": [
+      "Thuê cần",
+      "Bán mồi"
+    ],
+    "description": "Hồ câu ở An Nhơn Tây, Củ Chi với nhiều loại cá như nàng hai, trê, rô đồng, chim và tra.",
+    "address": "15 Bùi Thị Ngọn, Ấp Xóm Mới, Xã An Nhơn Tây, Củ Chi, TP.HCM",
+    "sourceUrls": [
+      "https://tripi.vn/blog/vi/doi-song/kham-pha-8-dia-diem-cau-ca-hap-dan-nhat-o-sai-gon-tripi"
+    ],
+    "recencyNote": "Được Tripi giới thiệu kèm link fanpage (bài đăng 03/06/2025); chưa kiểm chứng được bài đăng 2026 của hồ. Toạ độ mức xã An Nhơn Tây."
+  },
+  {
+    "slug": "ho-cau-ong-sau-hoc-mon",
+    "name": "Hồ Câu Ông Sáu Hóc Môn",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 10.8937624,
+    "lng": 106.5832489,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Mè",
+      "Rô phi",
+      "Tra"
+    ],
+    "ticketNote": "Giá tham khảo: 300.000đ/ngày, 150.000đ/suất 4 tiếng, câu đài 200.000đ/ngày (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ còn được gọi là Hồ Câu Huyện Đội Cũ Hóc Môn / Công viên Du lịch Sinh thái Hóc Môn, dạng bán tự nhiên; review ghi nhận chép, mè, rô phi lớn và tra bò.",
+    "address": "106 Nguyễn Thị Thử, Xuân Thới Sơn, Hóc Môn, TP.HCM",
+    "sourceUrls": [
+      "https://www.facebook.com/reel/1363759662399619/",
+      "https://www.canthuviet.vn/community/1798"
+    ],
+    "recencyNote": "Bài review chi tiết trên canthuviet.vn đăng 17/10/2026; fanpage hồ đăng video cân cá tháng 07/2026 — đang hoạt động. Toạ độ mức xã Xuân Thới Sơn."
+  },
+  {
+    "slug": "ho-cau-ca-lang-tre",
+    "name": "Hồ Câu Cá Làng Tre",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 10.7080046,
+    "lng": 106.7029164,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Lóc",
+      "Rô phi",
+      "Tra"
+    ],
+    "ticketNote": "Giá tham khảo: 50.000đ/người (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Khu hồ câu lâu năm ở Nhơn Đức, Nhà Bè, hệ thống hồ thông nhau và thông ra kênh lớn; cá gồm lóc, rô phi, tra.",
+    "address": "642 Lê Văn Lương, Ấp 2, Nhơn Đức, Nhà Bè, TP.HCM",
+    "sourceUrls": [
+      "https://mia.vn/cam-nang-du-lich/top-ho-cau-ca-sai-gon-rong-rai-18617",
+      "https://hoanghaigroup.com/top-20-dia-diem-cau-ca-giai-tri/"
+    ],
+    "recencyNote": "Có mặt trong danh sách hồ câu Sài Gòn của MIA.vn cập nhật 08/06/2025 và danh sách top 20 của Hoang Hai Group. Toạ độ trên tuyến Lê Văn Lương, Nhà Bè."
+  },
+  {
+    "slug": "cau-ca-giai-tri-thanh-long",
+    "name": "Câu Cá Giải Trí Thành Long",
+    "province": "TP. Hồ Chí Minh",
+    "region": "Nam",
+    "lat": 10.691391,
+    "lng": 106.6463219,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ câu giải trí ở Phong Phú cũ, Bình Chánh, trên Quốc lộ 50.",
+    "address": "B8/251 QL50, Ấp 2, Xã Phong Phú, Bình Chánh, TP.HCM",
+    "sourceUrls": [
+      "https://hoanghaigroup.com/top-20-dia-diem-cau-ca-giai-tri/",
+      "https://top10vietnam.net/top-10-ho-cau-ca-lon-nhat-tai-tp-hcm/"
+    ],
+    "recencyNote": "⚠️ YẾU: chỉ có mặt trong các trang tổng hợp (bản cập nhật gần nhất 01/2024, crawl lại 2026); chưa kiểm chứng được hoạt động 2025–2026 của hồ."
+  },
+  {
+    "slug": "ho-cau-anh-thy",
+    "name": "Hồ Câu Anh Thy",
+    "province": "Tây Ninh",
+    "region": "Nam",
+    "lat": 10.6525483,
+    "lng": 106.4706314,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Lóc"
+    ],
+    "ticketNote": "220.000đ/4 giờ, được mang cá về (theo fanpage của hồ — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Hồ câu dịch vụ ở Bình Đức, Bến Lức (Long An cũ, nay thuộc Tây Ninh), nổi bật với các buổi báo cá lóc số lượng lớn; giá do chính trang của hồ trả lời trong bình luận.",
+    "address": "Ấp Kênh Ngay, xã Bình Đức, huyện Bến Lức, tỉnh Long An (nay Tây Ninh)",
+    "sourceUrls": [
+      "https://www.facebook.com/reel/1017868044073928/",
+      "https://www.facebook.com/reel/1323857003059592/"
+    ],
+    "recencyNote": "Fanpage đăng video báo cá ngày 23/06/2026 và 11/10/2026, trả lời địa chỉ + giá cho khách — đang hoạt động. Toạ độ mức xã Bến Lức mới."
+  },
+  {
+    "slug": "khu-cau-ca-sinh-thai-dong-tam",
+    "name": "Khu Câu Cá Sinh Thái Đồng Tâm",
+    "province": "Đồng Nai",
+    "region": "Nam",
+    "lat": 10.9235652,
+    "lng": 106.8375195,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chim",
+      "Tra",
+      "Rô phi",
+      "Mè",
+      "Chép",
+      "Trôi",
+      "Tôm càng xanh"
+    ],
+    "ticketNote": "Giá tham khảo: thuê cần 100.000–120.000đ/4 giờ, 180.000–200.000đ/8 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [],
+    "description": "Khu câu cá sinh thái ở Hiệp Hòa, Biên Hòa; theo Mytour, hồ bổ sung cá lớn hằng tuần (chim, tra, rô phi, mè, chép, trôi) và tôm càng xanh khoảng 30kg/tuần.",
+    "address": "Hẻm 101 Đặng Văn Trơn, KP Tam Hòa, P. Hiệp Hòa, TP. Biên Hòa, Đồng Nai",
+    "sourceUrls": [
+      "https://mytour.vn/vi/blog/bai-viet/10-ho-cau-ca-giai-tri-hang-dau-tai-dong-nai.html"
+    ],
+    "recencyNote": "Có mặt trong danh sách 10 hồ câu hàng đầu Đồng Nai của Mytour (crawl lại ~09/2026); chưa có nguồn 2026 trực tiếp từ hồ. Toạ độ mức đường Đặng Văn Trơn."
+  },
+  {
+    "slug": "ho-cau-ca-giai-tri-thanh-binh-2",
+    "name": "Hồ Câu Cá Giải Trí Thanh Bình 2",
+    "province": "Đồng Nai",
+    "region": "Nam",
+    "lat": 10.9105566,
+    "lng": 106.827872,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Chép",
+      "Tra",
+      "Trắm cỏ",
+      "Trê",
+      "Rô phi"
+    ],
+    "ticketNote": null,
+    "facilities": [
+      "Thuê cần",
+      "Ăn uống"
+    ],
+    "description": "Hồ câu khoảng 2ha ở khu Tân Vạn, Biên Hòa, cá thường từ 2kg trở lên theo Mytour.",
+    "address": "Tân Vạn, TP. Biên Hòa, Đồng Nai",
+    "sourceUrls": [
+      "https://mytour.vn/vi/blog/doi-song/top-5-dia-diem-cau-ca-giai-tri-pho-bien-tai-phuong-long-binh-dong-nai-mytour.html"
+    ],
+    "recencyNote": "Mytour đăng danh sách ngày 25/07/2025 kèm số điện thoại và giờ mở cửa 07:00–17:00. Toạ độ mức phường Tân Vạn."
+  },
+  {
+    "slug": "ho-cau-co-ba",
+    "name": "Hồ Câu Cô Ba",
+    "province": "Cần Thơ",
+    "region": "Nam",
+    "lat": 10.0481201,
+    "lng": 105.7836454,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Thuê cần",
+      "Ăn uống"
+    ],
+    "description": "Hồ câu trong hẻm trên đường Trần Phú, Cái Khế, nhiều chòi nhỏ, mở cửa 07:00–23:00 theo Can Tho Review.",
+    "address": "1/23a Trần Phú, P. Cái Khế, Cần Thơ",
+    "sourceUrls": [
+      "https://canthoreview.vn/topAZ/ho-cau-ca-o-can-tho"
+    ],
+    "recencyNote": "Có mặt trong danh sách 7 hồ câu Cần Thơ của canthoreview.vn (bài crawl tháng 01/2026). Toạ độ mức đường Trần Phú; cách Hồ Câu Kê Đức đã có ~0,85km, là hồ riêng theo cùng danh sách nguồn."
+  },
+  {
+    "slug": "ho-cau-ca-quoc-map",
+    "name": "Hồ Câu Cá Quốc Mập",
+    "province": "Cần Thơ",
+    "region": "Nam",
+    "lat": 10.0414192,
+    "lng": 105.7813732,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": "Giá tham khảo: 50.000đ/giờ từ giờ thứ hai (giờ đầu 60.000đ) (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [
+      "Ăn uống"
+    ],
+    "description": "Hồ câu ở Cái Khế, qua cầu Cồn Khương rẽ phải khoảng 400m theo Can Tho Review; có thưởng tuần cho cá lớn nhất.",
+    "address": "8/12 Sông Hậu, Trần Phú, P. Cái Khế, Cần Thơ",
+    "sourceUrls": [
+      "https://canthoreview.vn/topAZ/ho-cau-ca-o-can-tho"
+    ],
+    "recencyNote": "Có mặt trong danh sách 7 hồ câu Cần Thơ của canthoreview.vn (bài crawl tháng 01/2026), kèm số điện thoại và fanpage. ⚠️ TOẠ ĐỘ MỨC PHƯỜNG Cái Khế — trùng điểm với Hồ Câu Kê Đức đã có trong dataset (khác tên, khác địa chỉ theo nguồn: Trần Phú vs 56 Nguyễn Văn Cừ) — cần ghim lại vị trí thật trước khi nhập."
+  },
+  {
+    "slug": "ho-cau-ai-vy",
+    "name": "Hồ Câu Ái Vy",
+    "province": "Vĩnh Long",
+    "region": "Nam",
+    "lat": 9.9635244,
+    "lng": 105.920773,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": "Giá tham khảo: 50.000đ/giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [
+      "Thuê cần",
+      "Ăn uống"
+    ],
+    "description": "Hồ câu 10.000m² ở Thiện Mỹ, Trà Ôn, cách trung tâm Trà Ôn khoảng 2km theo Quốc lộ 54; lượng cá thường xuyên trên 20 tấn theo trang du lịch Vĩnh Long.",
+    "address": "Ấp Giồng Thanh Bạch, xã Thiện Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long",
+    "sourceUrls": [
+      "https://vinhlongtourist.vn/iv/detailnews/?t=ho-cau-ai-vy-diem-den-trai-nghiem-thu-vi-khong-the-bo-qua-khi-den-voi-tra-on-vinh-long&id=news_316"
+    ],
+    "recencyNote": "Bài giới thiệu trên trang du lịch chính thức của Vĩnh Long (crawl ~08/2026), giờ mở cửa 08:00–20:00. Toạ độ mức xã Thiện Mỹ."
+  },
+  {
+    "slug": "vuon-sinh-thai-cau-ca-ngo-dong",
+    "name": "Vườn Sinh Thái Câu Cá Ngô Đồng",
+    "province": "Cà Mau",
+    "region": "Nam",
+    "lat": 9.1659958,
+    "lng": 105.1446072,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [
+      "Chòi / lều câu",
+      "Ăn uống"
+    ],
+    "description": "Vườn sinh thái câu cá giải trí ở Lý Văn Lâm, TP Cà Mau, có chòi giữa hồ và nhà hàng cạnh hồ; giá câu tính theo giờ (không nêu số tiền).",
+    "address": "Số 52 Nguyễn Tất Thành, ấp Bà Điều, xã Lý Văn Lâm, Cà Mau",
+    "sourceUrls": [
+      "https://luhanhvietnam.com.vn/du-lich/vuon-sinh-thai-cau-ca-ngo-dong-ca-mau.html"
+    ],
+    "recencyNote": "Được giới thiệu trên luhanhvietnam.com.vn và nghiepvukhachsan.com (crawl lại 08–09/2026); chưa có nguồn 2026 trực tiếp từ cơ sở. Toạ độ mức đường Nguyễn Tất Thành."
+  },
+  {
+    "slug": "khu-vui-choi-khang-huy",
+    "name": "Khu Vui Chơi Khang Huy",
+    "province": "Cà Mau",
+    "region": "Nam",
+    "lat": 9.407643,
+    "lng": 104.9730852,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [
+      "Rô",
+      "Trê",
+      "Lóc"
+    ],
+    "ticketNote": "Giá tham khảo: vé vào cổng 30.000đ/người lớn, trẻ em miễn phí (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+    "facilities": [
+      "Chòi / lều câu"
+    ],
+    "description": "Khu sinh thái khoảng 2ha ở Nguyễn Phích, U Minh, hoạt động từ 2015, có câu cá giải trí với cá đồng (rô, trê, lóc).",
+    "address": "Ấp 3, xã Nguyễn Phích, huyện U Minh, Cà Mau",
+    "sourceUrls": [
+      "https://luhanhvietnam.com.vn/du-lich/khu-vui-choi-khang-huy-ca-mau.html"
+    ],
+    "recencyNote": "Được giới thiệu trên luhanhvietnam.com.vn (crawl lại ~08/2026) kèm số liên hệ; chưa có nguồn 2026 trực tiếp từ cơ sở. Toạ độ mức xã Nguyễn Phích."
+  },
+  {
+    "slug": "ho-cau-kim-ca",
+    "name": "Hồ Câu Kim Cà",
+    "province": "Đồng Tháp",
+    "region": "Nam",
+    "lat": 10.4203419,
+    "lng": 105.6830176,
+    "kind": "hoDichVu",
+    "kindLabel": "Hồ dịch vụ",
+    "species": [],
+    "ticketNote": null,
+    "facilities": [],
+    "description": "Hồ câu giải trí ở xã Mỹ Thọ, huyện Cao Lãnh (Đồng Tháp), thường xuyên đăng video khách câu được cá lớn trên Facebook.",
+    "address": "Xã Mỹ Thọ, huyện Cao Lãnh, tỉnh Đồng Tháp",
+    "sourceUrls": [
+      "https://www.facebook.com/reel/1098980592731797/",
+      "https://www.facebook.com/reel/1489713339660384/"
+    ],
+    "recencyNote": "Tài khoản của hồ đăng video liên tục tháng 10–11/2026 (mới nhất 04/11/2026) kèm số điện thoại — đang hoạt động. Toạ độ là điểm trung tâm xã Mỹ Thọ."
+  }
+]

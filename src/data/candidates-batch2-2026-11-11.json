@@ -1,0 +1,1651 @@
+[
+ {
+  "slug": "ho-cau-dai-tan-dan",
+  "name": "Hồ câu đài Tân Dân",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.188126,
+  "lng": 105.795131,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Tân Dân là hồ dịch vụ tại Kim Anh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Kim Anh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-xuan-long",
+  "name": "Hồ Câu Xuân Long",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.144128,
+  "lng": 105.814722,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": "Giá tham khảo: 200.000–300.000đ/5 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Xuân Long là hồ dịch vụ tại Viên Nội, Phúc Thịnh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Viên Nội, Phúc Thịnh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-yen-binh-ha-bang",
+  "name": "Hồ câu đài Yên Bình (Hạ Bằng)",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.062752,
+  "lng": 105.558006,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Yên Bình (Hạ Bằng) là hồ dịch vụ tại Thôn 6, Hạ Bằng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Thôn 6, Hạ Bằng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã bằng mốc cấp huyện do OSM chưa có điểm mốc xã — sai số có thể tới vài km, nên kiểm chứng lại trên bản đồ trước khi nhập chính thức."
+ },
+ {
+  "slug": "ho-cau-thanh-quat",
+  "name": "Hồ Câu Thành Quắt",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.979878,
+  "lng": 105.935003,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Thành Quắt là hồ dịch vụ tại Bát Tràng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Bát Tràng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-dai-f79-mieu-nha",
+  "name": "Hồ Đài F79 Miêu Nha",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.016561,
+  "lng": 105.737312,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": "Giá tham khảo: 150.000–250.000đ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Đài F79 Miêu Nha là hồ dịch vụ tại Đình làng Miêu Nha, Miêu Nha, Xuân Phương, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đình làng Miêu Nha, Miêu Nha, Xuân Phương, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-vip-1991",
+  "name": "Hồ Câu Đài VIP 1991",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.148004,
+  "lng": 105.309156,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài VIP 1991 là hồ dịch vụ tại Nhà Văn Hoá, Bất Bạt, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Nhà Văn Hoá, Bất Bạt, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dong-ngan",
+  "name": "Hồ Câu Đông Ngàn",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.153833,
+  "lng": 105.851674,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đông Ngàn là hồ dịch vụ tại Đông Anh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đông Anh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-luong-son",
+  "name": "Hồ Câu Lương Sơn",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.864562,
+  "lng": 105.864649,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm cỏ"
+  ],
+  "ticketNote": "Giá tham khảo: 200.000–250.000đ/5 tiếng, 250.000–300.000đ/10 tiếng, tùy ngày bồi cá (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Lương Sơn là hồ dịch vụ tại Thư Phú, Thường Tín, Hà Nội. Cá tại hồ gồm Chép, Trắm cỏ.",
+  "address": "Thư Phú, Thường Tín, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-bigbang",
+  "name": "Hồ Câu BigBang",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.951097,
+  "lng": 105.698094,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu BigBang là hồ dịch vụ tại Phương Bản, Chương Mỹ, Hà Nội. Cá tại hồ gồm Chép.",
+  "address": "Phương Bản, Chương Mỹ, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-89",
+  "name": "Hồ Câu Đài 89",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.059967,
+  "lng": 105.586255,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài 89 là hồ dịch vụ tại Thúy Lai, Thạch Thất, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Thúy Lai, Thạch Thất, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dong-que",
+  "name": "Hồ Câu Đồng Quê",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.88463,
+  "lng": 105.801751,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đồng Quê là hồ dịch vụ tại Tam Hưng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Tam Hưng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-yen-so",
+  "name": "Hồ Câu Đài Yên Sở",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.966662,
+  "lng": 105.862231,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Yên Sở là hồ dịch vụ tại Hồ Cầu, Hoàng Mai, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Hồ Cầu, Hoàng Mai, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-anh-beo",
+  "name": "Hồ câu đài Anh Béo",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.03967,
+  "lng": 105.571968,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Anh Béo là hồ dịch vụ tại Bến Nghệ Kim Quan, Thạch Thất, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Bến Nghệ Kim Quan, Thạch Thất, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-tay",
+  "name": "Hồ Tây",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.055728,
+  "lng": 105.819642,
+  "kind": "hoTuNhien",
+  "kindLabel": "Hồ tự nhiên",
+  "species": [
+   "Chép",
+   "Mè",
+   "Trê"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Tây là hồ tự nhiên lớn của Hà Nội tại quận Tây Hồ — điểm câu cá ven hồ quen thuộc của cần thủ thủ đô. Cá tại hồ gồm Chép, Mè, Trê.",
+  "address": "Tây Hồ, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-lure-tu-mau",
+  "name": "Hồ Câu Lure Tú Mẩu",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.994686,
+  "lng": 105.887059,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Lure Tú Mẩu là hồ dịch vụ tại 132 Phố Thanh Đàm, Vĩnh Hưng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "132 Phố Thanh Đàm, Vĩnh Hưng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "bai-da-song-hong",
+  "name": "Bãi Đá Sông Hồng",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.077455,
+  "lng": 105.832312,
+  "kind": "song",
+  "kindLabel": "Sông",
+  "species": [
+   "Lăng",
+   "Chép",
+   "Trắm"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Bãi Đá Sông Hồng là điểm câu cá tự nhiên ven sông Hồng tại ngõ 264 Âu Cơ, Hà Nội. Theo CanThuViet, điểm này vào cửa miễn phí. Cá tại điểm gồm Lăng, Chép, Trắm.",
+  "address": "Ngõ 264 Âu Cơ, Hồng Hà, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-lai-yen",
+  "name": "Hồ câu Đài Lại Yên",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.028878,
+  "lng": 105.713753,
+  "kind": "hoTuNhien",
+  "kindLabel": "Hồ tự nhiên",
+  "species": [
+   "Chép",
+   "Mè",
+   "Trê"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Đài Lại Yên là hồ tự nhiên tại Sơn Đồng, Hà Nội. Cá tại hồ gồm Chép, Mè, Trê.",
+  "address": "Sơn Đồng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-gia-huy",
+  "name": "Hồ Câu Đài Gia Huy",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.102878,
+  "lng": 105.845753,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi",
+   "Trắm đen"
+  ],
+  "ticketNote": "Giá tham khảo: 400.000đ/5 giờ, 500.000đ/7 giờ, 600.000đ/10 giờ, 800.000đ/15 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Đài Gia Huy là hồ dịch vụ tại Vĩnh Thanh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi, Trắm đen.",
+  "address": "Vĩnh Thanh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-tan-xa",
+  "name": "Hồ Câu Đài Tân Xã",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.015376,
+  "lng": 105.546752,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Tân Xã là hồ dịch vụ tại Hoa Lạc, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Hoa Lạc, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-hoang-sa",
+  "name": "Hồ Câu Đài Hoàng Sa",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.124413,
+  "lng": 105.799749,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Rô phi",
+   "Chép"
+  ],
+  "ticketNote": "Giá tham khảo: 250.000đ/5 giờ, 300.000đ/7 giờ, 350.000đ/10 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Đài Hoàng Sa là hồ dịch vụ tại Đường Hoàng Sa, Vĩnh Thanh, Hà Nội. Cá tại hồ gồm Rô phi, Chép.",
+  "address": "Đường Hoàng Sa, Vĩnh Thanh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-ca-ong-tu-mieu-nha",
+  "name": "Hồ câu cá Ông Tư Miêu Nha",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.015505,
+  "lng": 105.750252,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu cá Ông Tư Miêu Nha là hồ dịch vụ tại Xuân Phương, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Xuân Phương, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-my-dinh",
+  "name": "Hồ câu Mỹ Đình",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.033457,
+  "lng": 105.754809,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Mỹ Đình là hồ dịch vụ tại Trịnh Văn Bô, Xuân Phương, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Trịnh Văn Bô, Xuân Phương, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-yen-binh-hoa-lac",
+  "name": "Hồ câu đài Yên Bình (Hoa Lạc)",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.017503,
+  "lng": 105.519378,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Yên Bình (Hoa Lạc) là hồ dịch vụ tại Hoa Lạc, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Hoa Lạc, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-tu-hai",
+  "name": "Hồ câu Tứ Hải",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.884877,
+  "lng": 105.874881,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Tứ Hải là hồ dịch vụ tại Thượng Phúc, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Thượng Phúc, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-can-cau",
+  "name": "Hồ câu Cần Cẩu",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.02313,
+  "lng": 105.912878,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Cần Cẩu là hồ dịch vụ tại Đường Đê Vàng, Việt Hưng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Đê Vàng, Việt Hưng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-pho-ni",
+  "name": "Hồ câu đài Phố Nỉ",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.300082,
+  "lng": 105.864765,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Phố Nỉ là hồ dịch vụ tại Xuân Sơn, Trung Giã, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Xuân Sơn, Trung Giã, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-minh-dang",
+  "name": "Hồ Câu Đài Minh Đăng",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.197626,
+  "lng": 105.801627,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Minh Đăng là hồ dịch vụ tại KCN Quang Minh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "KCN Quang Minh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-tron-vo",
+  "name": "Hồ câu Trốn Vợ",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.21429,
+  "lng": 105.801352,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Trốn Vợ là hồ dịch vụ tại Nội Bài, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Nội Bài, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-quyet-trang-2-phu-dong",
+  "name": "Hồ câu Quyết Trang 2 (Phù Đổng)",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.104183,
+  "lng": 105.912762,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Quyết Trang 2 (Phù Đổng) là hồ dịch vụ tại Đường Yên Khê, Phù Đổng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Yên Khê, Phù Đổng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-thanh-cao",
+  "name": "Hồ câu Thanh Cao",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 20.930255,
+  "lng": 105.791251,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Thanh Cao là hồ dịch vụ tại Cao Mật Thượng, Bình Minh, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Cao Mật Thượng, Bình Minh, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-thanh-beo",
+  "name": "Hồ câu đài Thanh Béo",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.107754,
+  "lng": 105.507131,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Thanh Béo là hồ dịch vụ tại Đường Xuân Khanh, Tùng Thiện, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Xuân Khanh, Tùng Thiện, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-cau-bay",
+  "name": "Hồ Câu Cầu Bây",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.024369,
+  "lng": 105.915109,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": "Giá tham khảo: 250.000đ/5 giờ, 400.000đ/10 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Cầu Bây là hồ dịch vụ tại Ngõ 68 Nguyễn Văn Linh, Thạch Bàn, Long Biên, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Ngõ 68 Nguyễn Văn Linh, Thạch Bàn, Long Biên, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-minh-duc",
+  "name": "Hồ Câu Minh Đức",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.062379,
+  "lng": 105.931626,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Minh Đức là hồ dịch vụ tại Phù Đổng, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Phù Đổng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-a80",
+  "name": "Hồ Câu A80",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.052518,
+  "lng": 105.86998,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm cỏ",
+   "Chép giòn"
+  ],
+  "ticketNote": "Giá tham khảo: 300.000đ/5 giờ, 400.000đ/7 giờ, 500.000đ/10 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu A80 là hồ dịch vụ tại 230 Ngõ 264 Đường Ngọc Thụy, Bồ Đề, Hà Nội. Cá tại hồ gồm Chép, Trắm cỏ, Chép giòn.",
+  "address": "230 Ngõ 264 Đường Ngọc Thụy, Bồ Đề, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "cong-vien-cau-ca-vui-ccv-de-vang",
+  "name": "Công Viên Câu Cá Vui - CCV Đê Vàng",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.006504,
+  "lng": 105.920628,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Công Viên Câu Cá Vui - CCV Đê Vàng là hồ dịch vụ tại Việt Hưng, Hà Nội.",
+  "address": "Việt Hưng, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-thach-ban",
+  "name": "Hồ câu Thạch Bàn",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.023255,
+  "lng": 105.910506,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Trôi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Thạch Bàn là hồ dịch vụ tại Long Biên, Hà Nội. Cá tại hồ gồm Chép, Trắm, Trôi.",
+  "address": "Long Biên, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-kdt-dang-xa",
+  "name": "Hồ câu KĐT Đặng Xá",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.022733,
+  "lng": 105.95793,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu KĐT Đặng Xá là hồ dịch vụ tại Ngõ 261 đường Ỷ Lan, Thuận An, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Ngõ 261 đường Ỷ Lan, Thuận An, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-don-dai-hai-quan",
+  "name": "Hồ Câu Đơn Đài Hải Quân",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.012235,
+  "lng": 105.944933,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": "Giá tham khảo: 250.000đ/ca 5 giờ, 400.000đ/ca 10 giờ, 600.000đ/15 giờ (theo trang tổng hợp — kiểm tra lại trước khi đi)",
+  "facilities": [],
+  "description": "Hồ Câu Đơn Đài Hải Quân là hồ dịch vụ tại Phố Đoàn Quang Dung, Gia Lâm, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Phố Đoàn Quang Dung, Gia Lâm, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-pho-ma",
+  "name": "Hồ Câu Phố Mã",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.268253,
+  "lng": 105.858878,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm đen",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Phố Mã là hồ dịch vụ tại Sóc Sơn, Hà Nội. Cá tại hồ gồm Chép, Trắm đen, Rô phi.",
+  "address": "Sóc Sơn, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-nam-son",
+  "name": "Hồ Câu Đài Nam Sơn",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.31863,
+  "lng": 105.878129,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Nam Sơn là hồ dịch vụ tại Trung Giã, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Trung Giã, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dong-lai",
+  "name": "Hồ Câu Đông Lai",
+  "province": "Hà Nội",
+  "region": "Bắc",
+  "lat": 21.21263,
+  "lng": 105.795131,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đông Lai là hồ dịch vụ tại Nội Bài, Hà Nội. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Nội Bài, Hà Nội",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ha-noi"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Hà Nội), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-su-si",
+  "name": "Hồ Câu Đài Su Si",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.725315,
+  "lng": 106.573478,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Su Si là hồ dịch vụ tại 84 Đường Lương Ngang, Tân Nhựt, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "84 Đường Lương Ngang, Tân Nhựt, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-ca-chuyen-chep-dat-do",
+  "name": "Hồ câu cá chuyên chép Đạt Đỗ",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 11.005293,
+  "lng": 106.54411,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu cá chuyên chép Đạt Đỗ là hồ dịch vụ tại 71 Đường Nguyễn Thị Nê, Phú Hòa Đông, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "71 Đường Nguyễn Thị Nê, Phú Hòa Đông, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-ca-tuan-tu",
+  "name": "Hồ Câu Cá Tuấn Tú",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.95813,
+  "lng": 106.514378,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Tuấn Tú là hồ dịch vụ tại Đường Nguyễn Duy Trinh, Tân An Hội, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Nguyễn Duy Trinh, Tân An Hội, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-bay-xiu",
+  "name": "Hồ Câu Cá Bảy Xíu",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.83013,
+  "lng": 106.734131,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Bảy Xíu là hồ dịch vụ tại Bình Trung, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Bình Trung, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-bon-xa",
+  "name": "Hồ Câu Cá Bốn Xã",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.776593,
+  "lng": 106.616751,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Bốn Xã là hồ dịch vụ tại 169 Đường Lê Văn Quới, Bình Trị Đông, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "169 Đường Lê Văn Quới, Bình Trị Đông, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-ca-ba-sau",
+  "name": "Hồ Câu Cá Bà Sáu",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.861507,
+  "lng": 106.697269,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Bà Sáu là hồ dịch vụ tại 73/1 Đường TL02, An Phú Đông, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "73/1 Đường TL02, An Phú Đông, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-ca-ut-them",
+  "name": "Hồ câu cá Út Thêm",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.696255,
+  "lng": 106.575002,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu cá Út Thêm là hồ dịch vụ tại Tân Nhựt, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Tân Nhựt, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-hoang-dung",
+  "name": "Hồ Câu Cá Hoàng Dũng",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.96013,
+  "lng": 106.478752,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Hoàng Dũng là hồ dịch vụ tại Tân An Hội, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Tân An Hội, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-dai-nhat-long",
+  "name": "Hồ Câu Đài Nhật Long",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.796447,
+  "lng": 106.823706,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Nhật Long là hồ dịch vụ tại 113 Đường Trường Lưu, Long Trường, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "113 Đường Trường Lưu, Long Trường, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-xuan-vinh",
+  "name": "Hồ câu đài Xuân Vinh",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.774127,
+  "lng": 106.567751,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Xuân Vinh là hồ dịch vụ tại Đường Rạch Cầu Suối, Vĩnh Lộc, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Rạch Cầu Suối, Vĩnh Lộc, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-da-xanh-ba-ria",
+  "name": "Hồ Đá Xanh Bà Rịa",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.508626,
+  "lng": 107.147129,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Đá Xanh Bà Rịa là hồ dịch vụ tại Long Hương, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Long Hương, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-vuon-truc",
+  "name": "Hồ câu Vườn Trúc",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.743505,
+  "lng": 106.571878,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Vườn Trúc là hồ dịch vụ tại Tân Tạo, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Tân Tạo, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-giai-tri-tam-da",
+  "name": "Hồ Câu Cá Giải Trí Tam Đa",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.84388,
+  "lng": 106.793254,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Giải Trí Tam Đa là hồ dịch vụ tại Đường Tam Đa, Long Phước, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đường Tam Đa, Long Phước, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-tam-binh-thu-duc",
+  "name": "Hồ Câu Cá Tam Bình Thủ Đức",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.850252,
+  "lng": 106.732376,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Tam Bình Thủ Đức là hồ dịch vụ tại Tam Bình, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Tam Bình, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-giai-tri-dai-phuong-nam",
+  "name": "Hồ Câu Giải Trí Đại Phương Nam",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.978755,
+  "lng": 106.616131,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Giải Trí Đại Phương Nam là hồ dịch vụ tại Bình Mỹ, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Bình Mỹ, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "cong-vien-bo-song-sai-gon-thu-duc",
+  "name": "Công viên bờ sông Sài Gòn (Thủ Đức)",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.771627,
+  "lng": 106.709756,
+  "kind": "song",
+  "kindLabel": "Sông",
+  "species": [
+   "Lăng",
+   "Chép",
+   "Trắm"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Công viên bờ sông Sài Gòn (Thủ Đức) là điểm câu cá ven sông Sài Gòn (khu công viên bờ sông, không phải hồ dịch vụ) tại An Khánh, TP. Hồ Chí Minh. Cá tại điểm gồm Lăng, Chép, Trắm.",
+  "address": "An Khánh, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "cong-vien-bo-song-sai-gon-luong-dinh-cua",
+  "name": "Công viên bờ sông Sài Gòn (Lương Định Của)",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.783938,
+  "lng": 106.727151,
+  "kind": "song",
+  "kindLabel": "Sông",
+  "species": [
+   "Lăng",
+   "Chép",
+   "Trắm"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Công viên bờ sông Sài Gòn (Lương Định Của) là điểm câu cá ven sông Sài Gòn (khu công viên bờ sông, không phải hồ dịch vụ) tại 25/3A Lương Định Của, An Khánh, TP. Hồ Chí Minh. Cá tại điểm gồm Lăng, Chép, Trắm.",
+  "address": "25/3A Lương Định Của, An Khánh, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dai-hoa-son",
+  "name": "Hồ Câu Đài Hoà Sơn",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 20.858376,
+  "lng": 105.602877,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Đài Hoà Sơn là hồ dịch vụ tại Lương Sơn, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Lương Sơn, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-pho-chua",
+  "name": "Hồ Câu Phố Chùa",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 20.63438,
+  "lng": 105.246003,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Phố Chùa là hồ dịch vụ tại QL12B, Tân Lạc, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "QL12B, Tân Lạc, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-kim-boi",
+  "name": "Hồ Câu Kim Bôi",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 20.669005,
+  "lng": 105.538628,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Kim Bôi là hồ dịch vụ tại Hợp Kim, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Hợp Kim, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-xom-vin-biu",
+  "name": "Hồ câu Xóm Vín Biu",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 20.487005,
+  "lng": 105.436006,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Xóm Vín Biu là hồ dịch vụ tại Xóm Vín Biu, Hương Nhượng, Lạc Sơn, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Xóm Vín Biu, Hương Nhượng, Lạc Sơn, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-tung-beo",
+  "name": "Hồ Câu Tùng Béo",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 20.710005,
+  "lng": 105.356002,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Tùng Béo là hồ dịch vụ tại Mường Thàng, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Mường Thàng, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã bằng mốc cấp huyện do OSM chưa có điểm mốc xã — sai số có thể tới vài km, nên kiểm chứng lại trên bản đồ trước khi nhập chính thức."
+ },
+ {
+  "slug": "ho-cau-dai-ha-hoa",
+  "name": "Hồ câu đài Hạ Hòa",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 21.570253,
+  "lng": 104.987753,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu đài Hạ Hòa là hồ dịch vụ tại Hạ Hòa, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Hạ Hòa, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM. Tên trên thư mục rất chung chung (\"Hồ câu đài\") — có thể là tên tạm của nhà hồ."
+ },
+ {
+  "slug": "ho-cau-chien-truong",
+  "name": "Hồ Câu Chiến Trường",
+  "province": "Phú Thọ",
+  "region": "Bắc",
+  "lat": 21.664628,
+  "lng": 105.165378,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Chiến Trường là hồ dịch vụ tại Đoan Hùng, Phú Thọ. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đoan Hùng, Phú Thọ",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/phu-tho"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Phú Thọ), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-vu-den",
+  "name": "Hồ câu Vũ Đen",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.694001,
+  "lng": 108.301751,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu Vũ Đen là hồ dịch vụ tại Đức Trọng, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Đức Trọng, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-hanh-nguyen",
+  "name": "Hồ Câu Cá Hành Nguyễn",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.983254,
+  "lng": 108.395379,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Hành Nguyễn là hồ dịch vụ tại Ankroet, Lang Biang, Đà Lạt, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Ankroet, Lang Biang, Đà Lạt, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-le-nguyen",
+  "name": "Hồ Câu Cá Lê Nguyễn",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.95713,
+  "lng": 108.451628,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Lê Nguyễn là hồ dịch vụ tại Cam Ly, Đà Lạt, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Cam Ly, Đà Lạt, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-lanh-rau",
+  "name": "Hồ câu cá Lành Râu",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.949411,
+  "lng": 108.404534,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu cá Lành Râu là hồ dịch vụ tại 35 Vạn Thành, Cam Ly, Đà Lạt, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "35 Vạn Thành, Cam Ly, Đà Lạt, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ khớp địa chỉ số nhà/tên đường trên OpenStreetMap."
+ },
+ {
+  "slug": "ho-cau-dich-vu-da-teh",
+  "name": "Hồ câu dịch vụ Đạ Tẻh",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.523754,
+  "lng": 107.485379,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ câu dịch vụ Đạ Tẻh là hồ dịch vụ tại Thôn 6A, Đạ Tẻh, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Thôn 6A, Đạ Tẻh, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-ca-trung-tien",
+  "name": "Hồ cá Trung Tiến",
+  "province": "Lâm Đồng",
+  "region": "Trung",
+  "lat": 11.968251,
+  "lng": 108.404379,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ cá Trung Tiến là hồ dịch vụ tại Lang Biang, Đà Lạt, Lâm Đồng. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "Lang Biang, Đà Lạt, Lâm Đồng",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/lam-dong"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh Lâm Đồng), crawl 11/11/2026. Toạ độ từ plus code Google Maps đăng kèm trên thư mục, giải mã theo mốc xã/phường của hồ và đã đối chiếu khung ranh giới OSM."
+ },
+ {
+  "slug": "ho-cau-ca-giai-tri-ba-khua",
+  "name": "Hồ Câu Cá Giải Trí Ba Khứa",
+  "province": "TP. Hồ Chí Minh",
+  "region": "Nam",
+  "lat": 10.817222,
+  "lng": 106.738472,
+  "kind": "hoDichVu",
+  "kindLabel": "Hồ dịch vụ",
+  "species": [
+   "Chép",
+   "Trắm",
+   "Rô phi"
+  ],
+  "ticketNote": null,
+  "facilities": [],
+  "description": "Hồ Câu Cá Giải Trí Ba Khứa là hồ dịch vụ tại 480/31/12 Bình Quới, TP. Hồ Chí Minh. Cá tại hồ gồm Chép, Trắm, Rô phi.",
+  "address": "480/31/12 Bình Quới, TP. Hồ Chí Minh",
+  "sourceUrls": [
+   "https://www.canthuviet.vn/ho-cau/tinh/ho-chi-minh"
+  ],
+  "recencyNote": "Liệt kê trong thư mục hồ câu CanThuViet (trang tỉnh TP. Hồ Chí Minh), crawl 11/11/2026. Toạ độ ghim theo Hẻm 480/89 Bình Quới trên OpenStreetMap, cùng trục hẻm 480 với địa chỉ nguồn 480/31/12 — sai số ước tính ~100–300m."
+ }
+]

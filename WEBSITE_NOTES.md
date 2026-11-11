@@ -1,5 +1,85 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## Spot ingestion batch 3 — snapshot at 663, 500 target exceeded, redeploy pending owner's 3 SQL runs (2026-11-11)
+
+Batch 3 of the 500-spot campaign (`src/data/candidates-batch3-
+2026-11-11.json`, 444 vetted spots: Bắc 282 · Trung 91 ·
+Nam 71 across 29 provinces; hồ dịch vụ 430 · hồ tự nhiên 9 ·
+hồ chứa 3 · sông 2) was merged into the bundled snapshot
+`src/data/spots.json`: **219 → 663 complete** — the
+campaign target of 500 is exceeded. Snapshot breakdown:
+hồ dịch vụ 561 · sông 44 · hồ chứa 37 · hồ tự nhiên 21;
+Bắc 373 / Trung 139 / Nam 151; provinces **34/34**
+(Lạng Sơn's first spot: `ho-cau-dai-yen-son`).
+Cross-checked: snapshot = the app's 662 seeds + exactly
+the 1 community-approved spot; the spots.json diff is
+pure insertions (no reformatting of prior entries). New
+entries carry `serverId: null` (552 in total across
+batches 1–3): their backend rows do not exist yet. One
+documented sanitation, shared with the app dataset and
+the SQL file: `ho-cau-dong-phuong`'s candidate `species`
+field is scrape debris (rulebook text + JSON fragments),
+dropped to `[]` here too; everything else is verbatim.
+
+**Still NOT redeployed, deliberately**: Supabase gains
+the new spots only after the owner runs ALL THREE batch
+files — `~/workspace/your_files/supabase-them-36-bai-11-11.sql`,
+`~/workspace/your_files/supabase-them-72-bai-dot-2.sql` and
+`~/workspace/your_files/supabase-them-444-bai-dot-3.sql` —
+once each, in order, in the Supabase SQL Editor. Redeploy
+(Vercel + GitHub Pages) happens right after those runs so
+the build-time fetch and the snapshot agree at 663. The
+fetch script's fallback logic was NOT touched.
+
+## Spot ingestion batch 2 — snapshot at 219, redeploy pending owner's SQL runs (2026-11-11)
+
+Batch 2 of the 500-spot campaign (`src/data/candidates-batch2-
+2026-11-11.json`, 72 vetted small ponds: Hà Nội +41 · TP.HCM
++18 · Phú Thọ +7 · Lâm Đồng +6) was merged into the bundled
+snapshot `src/data/spots.json`: **147 → 219 complete**.
+Snapshot breakdown: hồ dịch vụ 131 · sông 42 · hồ chứa 34 ·
+hồ tự nhiên 12; Bắc 91 / Trung 48 / Nam 80; provinces 33/34.
+Cross-checked: snapshot = the app's 218 seeds + exactly the 1
+community-approved spot; all batch-2 fields match the
+candidates file verbatim. New entries carry `serverId: null`
+(108 in total across batches 1+2): their backend rows do not
+exist yet.
+
+**Still NOT redeployed, deliberately**: Supabase gains the
+new spots only after the owner runs BOTH
+`~/workspace/your_files/supabase-them-36-bai-11-11.sql`
+(batch 1) and `~/workspace/your_files/supabase-them-72-bai-dot-2.sql`
+(batch 2), once each in the Supabase SQL Editor. Redeploy
+(Vercel + GitHub Pages) happens right after those runs so the
+build-time fetch and the snapshot agree at 219. The fetch
+script's fallback logic was NOT touched.
+
+Process note: batch 1's snapshot merge was an *uncommitted*
+working-tree change; it was reconstructed losslessly during
+this batch (111 committed + 36 batch-1 + 72 batch-2, verified
+by counts, slug sets and field-level diffs) after a git
+checkout briefly reverted the file to the committed 111.
+
+## Spot ingestion — snapshot at 147, redeploy pending owner's SQL run (2026-11-11)
+
+The 36 owner-approved crawl candidates
+(`src/data/candidates-2026-11-11.json`, all 36 approved incl. the
+7 flagged) were merged into the bundled snapshot
+`src/data/spots.json`: **111 → 147 complete**. Snapshot breakdown:
+hồ dịch vụ 64 · hồ chứa 34 · hồ tự nhiên 10 · sông 39; Bắc 43 /
+Trung 42 / Nam 62; provinces 33/34. (The snapshot runs one ahead
+of the app seeds — 147 vs 146 — because it also carries the 1
+community-approved spot.) New entries carry `serverId: null`:
+their backend rows do not exist yet.
+
+**NOT redeployed, deliberately**: the build-time fetch reads
+Supabase, which gains the 36 only after the owner runs
+`~/workspace/your_files/supabase-them-36-bai-11-11.sql` once in
+the Supabase SQL Editor. Redeploy (Vercel + GitHub Pages) happens
+right after that run, so the fetched data and the snapshot agree
+at 147 and the new spots get their serverIds/pages. The fetch
+script's fallback logic was NOT touched.
+
 ## ReviewHub-style redesign (2026-11-11)
 
 Owner, on the Vercel screenshot: "header hơi lệch, làm lại giao diện
