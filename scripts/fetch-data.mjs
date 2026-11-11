@@ -21,14 +21,28 @@ const KIND_LABEL = {
   suoi: 'Suối / khe',
 };
 
+// PostgREST caps every response at 1,000 rows, so a single request
+// would silently truncate the dataset once the backend passes 1,000
+// approved spots (it holds 1,762 after the 2026-11-11 lake SQL).
+// Page through with limit+offset until a short page comes back.
+// FETCH_PAGE_SIZE overrides the page size (used to test pagination).
+const PAGE_SIZE = Math.max(1, Number(process.env.FETCH_PAGE_SIZE) || 1000);
+
 async function fetchLive() {
-  const url =
-    `${SB_URL}/rest/v1/spots?select=id,client_id,name,province,region,lat,lng,kind,` +
-    `species,ticket_note,facilities,description&status=eq.approved&order=name.asc&limit=1000`;
-  const res = await fetch(url, { headers: { apikey: ANON, Authorization: `Bearer ${ANON}` } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const rows = await res.json();
-  if (!Array.isArray(rows) || rows.length < 50) throw new Error('unexpected row count');
+  const rows = [];
+  for (let offset = 0; ; offset += PAGE_SIZE) {
+    const url =
+      `${SB_URL}/rest/v1/spots?select=id,client_id,name,province,region,lat,lng,kind,` +
+      `species,ticket_note,facilities,description&status=eq.approved&order=name.asc` +
+      `&limit=${PAGE_SIZE}&offset=${offset}`;
+    const res = await fetch(url, { headers: { apikey: ANON, Authorization: `Bearer ${ANON}` } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const page = await res.json();
+    if (!Array.isArray(page)) throw new Error('unexpected response');
+    rows.push(...page);
+    if (page.length < PAGE_SIZE) break;
+  }
+  if (rows.length < 50) throw new Error('unexpected row count');
   return rows.map((r) => ({
     slug: r.client_id,
     serverId: r.id,

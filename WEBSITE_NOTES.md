@@ -1,5 +1,31 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## fetch-data pagination: the 1,000-row PostgREST trap is FIXED ahead of the 1,762 rebuild (2026-11-11, late evening)
+
+`scripts/fetch-data.mjs` previously fetched approved spots with a
+single `limit=1000` request — and PostgREST caps every response at
+1,000 rows, so once the backend passes 1,000 approved spots (it will
+hold **1,762** after the owner's two lake SQL files run), a rebuild
+would have **silently truncated the site to 1,000 spots**, dropping
+762 lakes with no error anywhere. `fetchLive()` now pages through
+with `limit`+`offset` until a short page returns, accumulating ALL
+rows before the usual row→snapshot mapping; ordering
+(`order=name.asc`), the <50-row sanity check, the snapshot
+write-back and the Dart/committed-snapshot fallbacks are unchanged.
+Page size defaults to 1,000 and can be overridden with
+`FETCH_PAGE_SIZE` (exists to test pagination).
+
+Verified against the CURRENT live backend (663 approved spots,
+under the cap, so behaviour today must be identical): default run →
+`663 spots from live backend`, 663 unique slugs, all with serverId.
+Pagination proof with small pages: `FETCH_PAGE_SIZE=250` (3 pages)
+and `=100` (7 pages) both accumulate exactly 663 unique rows;
+`=221` (663 = 3×221, exact multiple) terminates correctly on the
+trailing empty page with 663. `node --check` + `tsc --noEmit` pass.
+After verification the committed snapshot was restored to 1,762 —
+it stays that way until the owner's SQL runs land and the site is
+rebuilt (this fix is committed/pushed only; **no redeploy**).
+
 ## Lake expansion ingested (web-only): 454 natural lakes + 645 reservoirs in snapshot + SQL, pending owner's 2 SQL runs (2026-11-11, late evening)
 
 Owner approved **454 natural lakes + 654 reservoirs** on 11/11
