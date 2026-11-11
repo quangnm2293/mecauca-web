@@ -1,5 +1,33 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## 663 LIVE on both hosts — campaign closed (2026-11-11, evening)
+
+The owner ran all three batch SQL files in the Supabase SQL
+Editor; anon REST count of approved spots = **663 exactly**.
+Rebuilt and redeployed both hosts the same evening:
+
+- **Data path:** the build-time fetch used the LIVE backend,
+  not the fallback — `fetch-data: 663 spots from live backend`
+  on both builds, and the refreshed `src/data/spots.json` now
+  carries real `serverId`s for all 663 (0 null, was 552).
+  Snapshot and backend agree at 663.
+- **Vercel:** build with `SITE_ORIGIN=https://mecauca.vercel.app`,
+  base path empty; `npx vercel deploy --prod --yes` → READY,
+  production https://mecauca.vercel.app (deployment
+  `mecauca-ptyyekwqq`). Verified live: home 200 with the "663"
+  total, `/bai-cau/ho-cau-dai-yen-son/` 200 (Lạng Sơn's first
+  spot), sitemap 693 URLs (664 under `/bai-cau/` = 663 spots +
+  the index), redesign CSS `e368a40cfaf708ba.css` unchanged.
+- **GitHub Pages:** build with `SITE_BASE_PATH=/mecauca-web`,
+  gh-pages commit `8d6f12e`. Verified live with the same checks:
+  home 200 + "663", the Lạng Sơn spot page 200, sitemap 693
+  URLs, redesign CSS `4adffbc6987b2176.css` unchanged.
+- Export shape: 703 static pages, 663 spot directories.
+
+The 500-spot campaign is complete: **663 spots, 34/34
+provinces** (hồ dịch vụ 561 · sông 44 · hồ chứa 37 ·
+hồ tự nhiên 21; Bắc 373 / Trung 139 / Nam 151 per snapshot).
+
 ## Spot ingestion batch 3 — snapshot at 663, 500 target exceeded, redeploy pending owner's 3 SQL runs (2026-11-11)
 
 Batch 3 of the 500-spot campaign (`src/data/candidates-batch3-
