@@ -1,5 +1,35 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## 1,762 LIVE on both hosts — lake campaign closed (2026-11-11, night)
+
+The owner ran both lake SQL files; anon REST count of approved
+spots = **1,762 exactly**. Rebuilt and redeployed both hosts:
+
+- **Data path:** `fetch-data: 1762 spots from live backend` on
+  BOTH builds — the pagination fix (below) did its job, no
+  1,000-row truncation, no snapshot fallback. The refreshed
+  `src/data/spots.json` now carries real `serverId`s for all
+  1,762 (0 null). Live breakdown: hồ chứa / đập 682 · hồ dịch
+  vụ 561 · hồ tự nhiên 475 · sông 44.
+- **Vercel:** deployment `mecauca-8k04onj9s` READY/production.
+  GOTCHA: the plain `vercel deploy --prod` now FAILS at upload
+  with "Too many requests — more than 5000, api-upload-free"
+  (the 1,762-spot export has too many files for per-file upload
+  on this plan) — **`--archive=tgz` is required from now on**.
+  Verified live: home 200 with the "1762" total, sitemap 1,792
+  URLs (1,763 under `/bai-cau/`), spot checks 200 with correct
+  names — `dam-cau-hai` (Đầm Cầu Hai, Huế), `ho-dong-nai-3`
+  (Hồ Đồng Nai 3 / Tà Đùng, Lâm Đồng), regression
+  `ho-cau-dai-yen-son` 200; CSS `e368a40cfaf708ba.css` unchanged.
+- **GitHub Pages:** gh-pages `894ee63`. Verified live with the
+  same checks: home 200 + "1762", sitemap 1,792 (1,763
+  `/bai-cau/`), the same three spot pages 200, CSS
+  `4adffbc6987b2176.css` unchanged.
+- Export shape: 1,799 HTML files, 1,762 spot pages.
+
+The lake campaign is complete: **1,762 spots** (663 + 454
+natural lakes + 645 reservoirs), 34/34 provinces.
+
 ## fetch-data pagination: the 1,000-row PostgREST trap is FIXED ahead of the 1,762 rebuild (2026-11-11, late evening)
 
 `scripts/fetch-data.mjs` previously fetched approved spots with a
