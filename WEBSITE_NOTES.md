@@ -1,5 +1,44 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## Hero vs calendar today-score divergence — FIXED + LIVE both hosts (2026-11-11, evening)
+
+Owner's screenshots (Hồ câu Thanh An, Quảng Trị): the "Dự báo
+tại bãi" hero said **52** ("Ngày trung bình") while the month
+calendar's day-11 cell and detail said **36** ("Ngày xấu") — both
+labelled "hôm nay". Root cause (verified in code): both surfaces
+run `lib/score.ts` `computeScore`, but the hero feeds it FROM-NOW
+inputs (pressure trend now vs 3h ago, 72h swing, current
+wind/gust, rain over the REST of today, current temperature,
+water windows aligned to now) while `computeCalendarDays` fed
+today the WHOLE-day inputs (15:00−12:00 trend, within-day swing,
+daily-max wind/gust, whole-day rain, daily-mean temperature).
+After a rough morning the two legitimately diverge.
+
+**Fix:** the hero's input mapping was extracted into ONE shared
+helper, `scoreFromCurrent(windows, weather, water, species)` in
+`src/lib/forecast.ts`, now used by `SpotForecast` (hero) and by
+`SpotCalendar`, which additionally fetches `fetchWeather` +
+`fetchWaterInputs` and — once they load — replaces today's
+calendar entry (cell + day detail) with the from-now score,
+`isForecast`/`Dự báo` kept. All other days keep the whole-day
+computation (correct for days that have not started); if the
+current-conditions fetch fails, today's whole-day entry remains
+as the fallback. The app-faithful calendar port in
+`src/lib/calendar.ts` is untouched apart from a pointer comment.
+No unit-test framework exists in this repo (checked package.json)
+— verification was `tsc --noEmit` clean + both production builds.
+
+**Deployed both hosts, verified live:** Vercel deployment
+`mecauca-lpoy97vv2` (READY; spot page 200, served page chunk
+contains the override construction — `new Map(days).set(today,
+{…, isForecast:!0, basisLabelVi:"Dự báo", score:
+scoreFromCurrent(windows, weather…)})`; CSS unchanged
+`e368a40cfaf708ba.css`). GitHub Pages gh-pages `055e0c1`: spot
+page 200 serving page chunk `page-f39d68a28fe120ea.js`,
+byte-size-identical to the Vercel-served chunk (41,172 bytes)
+with the same override code; CSS unchanged
+`4adffbc6987b2176.css`. Both builds carry the 663-spot dataset.
+
 ## 663 LIVE on both hosts — campaign closed (2026-11-11, evening)
 
 The owner ran all three batch SQL files in the Supabase SQL

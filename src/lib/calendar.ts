@@ -13,6 +13,14 @@
  * * Past days are never scored.
  * Components with no data are excluded and the total renormalised,
  * exactly like the single-day score.
+ *
+ * NOTE (2026-11-11): the whole-day basis above is right for days
+ * that have not started, but for TODAY it disagreed with the
+ * spot-page hero (which scores the rest of today from current
+ * conditions). SpotCalendar therefore overrides today's entry
+ * with the shared scoreFromCurrent mapping (lib/forecast.ts)
+ * once current conditions load — this whole-day entry remains
+ * only as the fallback when that fetch fails.
  */
 import { addDaysWall, dateKeyICT, solunarDay, type SolunarDay } from './astro';
 import { fetchDaily, type DailyWeather, type HourEntry } from './forecast';

@@ -10,11 +10,12 @@ import {
   todayICT,
   wallDate,
 } from '@/lib/astro';
-import { computeScore, scoreColor, type FishingScore } from '@/lib/score';
+import { scoreColor, type FishingScore } from '@/lib/score';
 import {
   fetchDaily,
   fetchWaterInputs,
   fetchWeather,
+  scoreFromCurrent,
   type DailyWeather,
   type WeatherData,
 } from '@/lib/forecast';
@@ -64,21 +65,10 @@ export default function SpotForecast({ lat, lng, species }: Props) {
     };
   }, [lat, lng]);
 
+  // Shared with the calendar's today cell (scoreFromCurrent) — the
+  // hero and the calendar must always agree on today's score.
   const score: FishingScore = useMemo(
-    () =>
-      computeScore({
-        solunar: windows,
-        pressureTrend3h: weather?.pressureTrend3h ?? null,
-        pressureSwing3d: weather?.pressureSwing3d ?? null,
-        severeWeatherAhead: weather?.severeWeatherAhead ?? false,
-        windKmh: weather?.windKmh ?? null,
-        gustKmh: weather?.gustKmh ?? null,
-        rainProbability: weather?.rainProbRestOfDay ?? null,
-        rainMm: weather?.rainMmRestOfDay ?? null,
-        temperatureC: weather?.tempC ?? null,
-        species,
-        water,
-      }),
+    () => scoreFromCurrent(windows, weather, water, species),
     [windows, weather, water, species],
   );
 

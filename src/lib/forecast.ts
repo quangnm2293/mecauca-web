@@ -4,8 +4,8 @@
  * discharge feeds. Any failure returns null — the UI then falls back
  * to a windows-only score and says so plainly. Nothing is fabricated.
  */
-import { dateKeyICT, nowICTWall } from './astro';
-import type { WaterInputs } from './score';
+import { dateKeyICT, nowICTWall, type SolunarDay } from './astro';
+import { computeScore, type FishingScore, type WaterInputs } from './score';
 
 export interface HourEntry {
   time: Date; // ICT wall time
@@ -186,6 +186,38 @@ export function parseForecast(json: Record<string, never>, now: Date): WeatherDa
     severeWeatherAhead: severe,
     todayHours,
   };
+}
+
+/**
+ * THE single "score for today, from now" mapping: current conditions
+ * (pressure trend now vs 3h ago, 72h swing, current wind/gust, rain
+ * over the REST of today, current temperature) run through the same
+ * formula as everywhere else. Used by BOTH the spot-page hero
+ * (SpotForecast) and the month calendar's TODAY cell (SpotCalendar)
+ * so the two can never drift apart — every other calendar day keeps
+ * the whole-day computation, which is the right basis for a day
+ * that has not started yet. (Fix 2026-11-11: hero showed 52 while
+ * the calendar's whole-day cell showed 36 for the same "hôm nay".)
+ */
+export function scoreFromCurrent(
+  windows: SolunarDay,
+  weather: WeatherData | null,
+  water: WaterInputs | null,
+  species: string[],
+): FishingScore {
+  return computeScore({
+    solunar: windows,
+    pressureTrend3h: weather?.pressureTrend3h ?? null,
+    pressureSwing3d: weather?.pressureSwing3d ?? null,
+    severeWeatherAhead: weather?.severeWeatherAhead ?? false,
+    windKmh: weather?.windKmh ?? null,
+    gustKmh: weather?.gustKmh ?? null,
+    rainProbability: weather?.rainProbRestOfDay ?? null,
+    rainMm: weather?.rainMmRestOfDay ?? null,
+    temperatureC: weather?.tempC ?? null,
+    species,
+    water,
+  });
 }
 
 export async function fetchDaily(lat: number, lng: number): Promise<Map<string, DailyWeather>> {

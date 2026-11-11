@@ -1,14 +1,20 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { addDaysWall, dateKeyICT, fmtTime, todayICT, wallDate } from '@/lib/astro';
+import { addDaysWall, dateKeyICT, fmtTime, solunarDay, todayICT, wallDate } from '@/lib/astro';
 import {
   computeCalendarDays,
   fetchCalendarBundles,
   type CalendarBundles,
   type CalendarDayScore,
 } from '@/lib/calendar';
-import { scoreColor } from '@/lib/score';
+import {
+  fetchWaterInputs,
+  fetchWeather,
+  scoreFromCurrent,
+  type WeatherData,
+} from '@/lib/forecast';
+import { scoreColor, type WaterInputs } from '@/lib/score';
 
 /**
  * "Lịch câu tháng này" for one spot — port of the app's per-spot
@@ -39,6 +45,11 @@ export default function SpotCalendar({
   const todayWall = useMemo(() => wallDate(today.y, today.m, today.d), [today.y, today.m, today.d]);
   const [view, setView] = useState({ y: today.y, m: today.m });
   const [bundles, setBundles] = useState<CalendarBundles | null>(null);
+  // Current conditions for the TODAY override below (same fetches
+  // the spot-page hero makes).
+  const [current, setCurrent] = useState<{ weather: WeatherData; water: WaterInputs | null } | null>(
+    null,
+  );
   const [selected, setSelected] = useState<string | null>(null);
   const cacheRef = useRef(new Map<string, Map<string, CalendarDayScore>>());
 
@@ -50,6 +61,13 @@ export default function SpotCalendar({
         setBundles(b);
       }
     });
+    (async () => {
+      const w = await fetchWeather(lat, lng);
+      if (!alive || !w) return;
+      const wt = await fetchWaterInputs(lat, lng, w);
+      if (!alive) return;
+      setCurrent({ weather: w, water: wt });
+    })();
     return () => {
       alive = false;
     };
@@ -74,6 +92,34 @@ export default function SpotCalendar({
     return computed;
   }, [monthKey, view.y, view.m, lat, lng, species, todayWall, bundles]);
 
+  // TODAY must match the "Dự báo tại bãi" hero exactly (fix
+  // 2026-11-11: hero 52 vs calendar 36 for the same day). The
+  // calendar's own entry for today is a WHOLE-day score (daily max
+  // wind, whole-day rain, midday pressure trend), while the hero
+  // scores the REST of today from current conditions — after a
+  // rough morning the two legitimately diverge, yet both call
+  // themselves "hôm nay". So once current conditions load, today's
+  // entry is replaced by the shared scoreFromCurrent mapping (same
+  // helper the hero uses, same windows). Every other day keeps the
+  // whole-day computation; if the current-conditions fetch failed,
+  // the whole-day entry stays as the fallback.
+  const daysWithToday = useMemo(() => {
+    if (!current) return days;
+    const key = dateKeyICT(todayWall);
+    const base = days.get(key);
+    const windows = base?.windows ?? solunarDay(todayWall, lat, lng);
+    const out = new Map(days);
+    out.set(key, {
+      dateKey: key,
+      date: todayWall,
+      windows,
+      isForecast: true,
+      basisLabelVi: 'Dự báo',
+      score: scoreFromCurrent(windows, current.weather, current.water, species),
+    });
+    return out;
+  }, [days, current, todayWall, lat, lng, species]);
+
   // Navigation limits (app): January of the current year … +2 months.
   const minIdx = today.y * 12 + 0; // January = month index 0-based below
   const curIdx = view.y * 12 + (view.m - 1);
@@ -91,7 +137,7 @@ export default function SpotCalendar({
   // Monday-first offset: JS getUTCDay 0=Sun..6=Sat → Mon=0..Sun=6.
   const leadBlanks = (firstOfMonth.getUTCDay() + 6) % 7;
 
-  const selectedDay = selected ? days.get(selected) : undefined;
+  const selectedDay = selected ? daysWithToday.get(selected) : undefined;
   const selectedIsPast =
     selected != null && selected < dateKeyICT(todayWall);
 
@@ -136,7 +182,7 @@ export default function SpotCalendar({
           const key = dateKeyICT(wallDate(view.y, view.m, dayNum));
           const isPast = key < dateKeyICT(todayWall);
           const isToday = key === dateKeyICT(todayWall);
-          const scored = days.get(key);
+          const scored = daysWithToday.get(key);
           return (
             <button
               key={key}
