@@ -1,5 +1,76 @@
 # WEBSITE_NOTES — Mê Câu Cá website
 
+## Lake expansion ingested (web-only): 454 natural lakes + 645 reservoirs in snapshot + SQL, pending owner's 2 SQL runs (2026-11-11, late evening)
+
+Owner approved **454 natural lakes + 654 reservoirs** on 11/11
+evening ("Nhập 454 hồ tự nhiên + 654 hồ chứa — lên 1.771 bãi").
+Ingestion is WEB-ONLY (app shelved 11/11 19:21 — the Dart
+generator was NOT used; SQL was generated from the candidates
+JSON by script). What landed in this commit:
+
+- `src/data/candidates-reservoirs-batch1.json` (NEW): the OSM
+  harvest appendix `~/natural_work/reservoirs_final.json`
+  converted to the standard candidates schema (kind `hoChua`,
+  kindLabel `Hồ chứa`, species [] / ticketNote null throughout,
+  descriptions from file facts only, area via the harvest's
+  `fmt_area` labelled "ước tính từ đường viền bản đồ
+  OpenStreetMap"; sourceUrls/recencyNote mirror the natural
+  batch: OSM way/relation + GADM province check 11/2026).
+- **Validation of the 654 reservoirs:** all provinces in the
+  34-province set, all pins inside the Vietnam bbox, **zero
+  collisions** against the 663 existing + 454 natural (no
+  normalised-name match within 500 m, nothing within 150 m;
+  the 4 pairs at 172–404 m have different names = distinct
+  water bodies, kept; all name-equal pairs are ≥3 km apart).
+  No internal duplicates. 13 base slugs collided with existing
+  slugs and 21 were duplicated internally — resolved with the
+  harvest slug rule (bare → `-province` → `-province-2`…),
+  no drops for slug reasons.
+- **9 rows DROPPED as non-lakes** (the reservoirs appendix had
+  never received the natural batch's name-cleanup pass; all
+  ≤0.3 ha, names denote infrastructure, not fishable water):
+  Giếng thôn Đông, Giếng đình Mai Động, Giếng Xóm Đông,
+  Giếng Xóm Tây (village wells, Hà Nội), Bể nước (Vĩnh Long),
+  Bể chứa nước (Khánh Hòa), Bể Bơi Tiến Phương (swimming pool,
+  Ninh Bình), Đài Phun Nước (fountain, Lâm Đồng), Trạm Cấp
+  Nước Hương Canh (water-supply station, Hà Nội). Reservoirs
+  therefore land at **645**, not 654: new total 454 + 645 =
+  **1,099**, platform **663 + 1,099 = 1,762** (not 1,771).
+  Dropped rows remain in `~/natural_work/reservoirs_final.json`
+  if the owner ever wants them back.
+- `sql/supabase-them-454-ho-tu-nhien.sql` (454 rows) +
+  `sql/supabase-them-645-ho-chua.sql` (645 rows), mirrored to
+  `~/workspace/your_files/`. Exact batch-3 INSERT shape
+  (same column list, `client_id` = slug, `'seed'/'approved'`,
+  `ON CONFLICT (client_id) DO NOTHING`, `ARRAY[...]`/`'{}'`
+  array style, `''` quote escaping). Format proof: the
+  generator reproduces the real batch-3 SQL **byte-identically
+  for 443/444 rows** from `candidates-batch3-2026-11-11.json`;
+  the one differing row is `ho-cau-dong-phuong`, whose debris
+  species field was sanitised at ingestion time (documented
+  then) — a data difference, not a format one. Row counts and
+  client_id sets verified equal to the candidate slug sets.
+- `src/data/spots.json` merged **663 → 1,762** (pure tail
+  insertion, first 663 entries untouched; new entries
+  `serverId: null`; reservoir kindLabel `Hồ chứa / đập` per
+  the snapshot/fetch-data convention, candidates file keeps
+  `Hồ chứa` per the batch-3 candidates convention). New
+  breakdown: hồ chứa 682 · hồ dịch vụ 561 · hồ tự nhiên 475 ·
+  sông 44; Bắc 663 / Trung 806 / Nam 293.
+
+**Pending:** owner runs the 2 SQL files in the Supabase SQL
+Editor, in order (454 natural → 645 reservoirs), then the
+site is rebuilt → 1,762. The website was NOT redeployed in
+this step; production builds still fetch the live backend
+(663) — expected.
+
+**⚠️ REBUILD TRAP (fix before the 1,762 rebuild):**
+`scripts/fetch-data.mjs` fetches `limit=1000` from PostgREST,
+which also caps responses at 1,000 rows — after the SQL runs
+the backend will hold 1,762 approved spots but the build
+would silently keep only 1,000. Paginate (offset/Range) or
+raise the cap in `fetchLive()` before rebuilding for 1,762.
+
 ## Hero vs calendar today-score divergence — FIXED + LIVE both hosts (2026-11-11, evening)
 
 Owner's screenshots (Hồ câu Thanh An, Quảng Trị): the "Dự báo
