@@ -8,6 +8,7 @@ import SuggestionForm from '@/components/SuggestionForm';
 import FlagButton from '@/components/FlagButton';
 import { SpotReports } from '@/components/ReportList';
 import { excerpt, spotBySlug, spots, spotsInProvince } from '@/lib/data';
+import { spotVideo } from '@/lib/spotVideos';
 import { KIND_COLORS } from '@/lib/types';
 
 export function generateStaticParams() {
@@ -46,6 +47,7 @@ export default async function SpotPage({ params }: { params: Promise<{ slug: str
   const bbox = `${spot.lng - delta},${spot.lat - delta * 0.6},${spot.lng + delta},${spot.lat + delta * 0.6}`;
   const mapEmbed = `https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}&layer=mapnik&marker=${spot.lat},${spot.lng}`;
   const sameProvince = spotsInProvince(spot.province, spot.slug).slice(0, 3);
+  const video = spotVideo(spot.slug);
 
   return (
     <div className="wrap">
@@ -137,6 +139,20 @@ export default async function SpotPage({ params }: { params: Promise<{ slug: str
               )}
             </div>
           </section>
+
+          {video && (
+            <section className="panel" aria-label="Video về bãi này">
+              <h2>Video về bãi này</h2>
+              <p style={{ color: 'var(--ink-soft)' }}>
+                Short “{video.title}” trên kênh YouTube Mê Câu Cá — Trải Nghiệm Và Chia Sẻ.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                <a className="btn btn-primary" href={video.url} target="_blank" rel="noreferrer">
+                  ▶ Xem Short về bãi này trên YouTube
+                </a>
+              </p>
+            </section>
+          )}
 
           <section className="panel" aria-label="Bản đồ">
             <h2>Vị trí bãi câu</h2>
